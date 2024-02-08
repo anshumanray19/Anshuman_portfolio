@@ -1,0 +1,165 @@
+.navbar, .dropdown-menu{
+    opacity: .80;
+    background-color: #17252f;
+    z-index: 10;
+}
+.navbar, a{
+    color: white !important; 
+}
+.dropdown-menu , a:hover{
+    color: #ffc436 !important ;
+}
+.form-inline{
+    display: flex;
+}
+.NavBtn{
+    color: white !important;
+    border: 1px solid #ffc436 !important ;
+}
+.NavBtn:hover{
+    color: #ffc436 !important ;
+    background-color: #8296c8;
+}
+footer{
+    opacity: .80;
+    background-color: #17252f;
+    z-index: 10;
+    color: white;
+    margin-bottom: -1.2% !important;
+}
+body{
+    background-image: url(./481844-Bordeaux.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#rolling-text {
+    white-space: nowrap;
+    overflow: hidden; 
+    animation: roll 5s linear infinite;
+  }
+  @media (max-width: 767px) {
+    #rolling-text {
+        white-space: normal;
+      animation: roll 4s linear infinite; 
+      font-size: 18px;
+      width: 100%;
+    }
+    .subHeading{
+        font-size: 20px !important;
+    }
+    #word{
+        font-size: 20px !important;
+    }
+  }
+
+@keyframes roll {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+.intro{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+    overflow: hidden;
+    width: 100%;
+    border-right: transparent;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 5s steps(40, end);
+
+}
+@keyframes typing {
+    from {
+      width: 0; 
+    }
+    to {
+      width: 100%; 
+    }
+  }
+  @media (max-width: 767px) {
+    .intro {
+        height: 350px;
+        white-space: normal;
+    }
+  }
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #17252f;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ffc436;
+    border-radius: 2px;
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+.Heading{
+    text-align: center;
+    color: #332d33;
+}
+.subHeading{
+    font-size: 28px;
+      font-weight: bold;
+      text-align: center;
+      color: #332d33;
+}
+    #word {
+      font-size: 28px;
+      font-weight: bold;
+      text-align: center;
+      color: #ffab00;
+    }
+    .V-Gap{
+        height: 30px;
+    }
+    .Border-Shadow{
+        padding: 2% 5% 2% 5%;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+        border: 2px solid #ccc;
+        border-radius: 10px !important;
+        font-size: 20px;
+        font-weight: 500;
+        color: azure;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+    }
+    .Img{
+        width:100%;
+    }
+    .bubble-btn {
+        background-color: #ffab00;
+        color: white;
+        border: none;
+        border-radius: 50px;
+        padding: 3%;
+        font-size: 16px;
+        position: relative;
+        margin-top: 5px;
+        transition: transform 0.2s;
+        cursor: pointer;
+      }
+      
+      .bubble-btn:hover {
+        animation: bubble 0.4s ease-out;
+      }
+      
+      @keyframes bubble {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.2);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
