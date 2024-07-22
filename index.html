@@ -3,132 +3,482 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title>Anshuman Portfolio</title>
+    <link rel ="icon" type="image/x-icon" href="AnshICon.jpg"/>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <script src="Script.js" type="Script"></script>
-    <link rel="Script" type="text/Script" href="Script.js">
-    <link rel="stylesheet" type="text/css" href="Style.css">
+    <script src="https://example.com/fontawesome/v6.5.2/js/fontawesome.js" data-auto-replace-svg="nest"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <!-- Feather Icons -->
+<script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <link rel="stylesheet" href="Site.css">
+    <script src="Site.js"></script>
 </head>
-<body class="img-fluid">
-    <!-- nav -->
-    <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="#"><img src="travel-tour-logo.png" alt="Bordeaux" height="18px"/></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Book</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-               Packages
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">United States</a>
-                <a class="dropdown-item" href="#">India</a>
-                <a class="dropdown-item" href="#">France</a>
-                <a class="dropdown-item" href="#">Germany</a>
-              </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
-              </li>
-          </ul>
+<body>
+        <!-- Loader -->
+        <div id="loader">
+            <img src="Loader.gif" alt="Loading..." class="loader-gif">
+            <div class="loading-text">Loading...</div>
         </div>
-        <div class="form-inline">
-            <button class="btn btn-outline-success my-2 my-sm-0 NavBtn" type="submit">Sign in</button>
-            <div style="margin-left: 10px;"></div>
-            <button class="btn btn-outline-success my-2 my-sm-0 NavBtn" type="submit">Register</button>
+<!-- Loader End -->
+    <!-- Navbar -->
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <a class="navbar-brand" href="#">Anshuman Samantaray</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://anshumanray.tiiny.site/" target="_blank">Resume</a>
+            </li>
+            <li class="nav-item">
+                <button class="btn btn-outline-light theme-toggle-button" aria-label="Toggle Dark Mode">
+                    <span class="iconify sunicon" data-icon="feather-sun" id="sun-icon"></span>
+                    <span class="iconify" data-icon="feather-moon" id="moon-icon"></span>
+                </button>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Header -->
+<header class="bg-primary text-white text-center">
+    <div class="video-container">
+        <video autoplay muted loop id="headerVideo">
+            <source src="RainDrop.mp4" type="video/mp4">
+            <!-- Provide alternate sources for different browsers if needed -->
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="canvas-overlay"></div> 
+    <!-- Overlay for painted effect -->
+    <div class="container d-flex align-items-center flex-column">
+        <h1 class="mt-5 animate__animated animate__fadeInDown">Hi, I'm Anshuman
+            <span class="ASRHi">
+                <img alt="👋" draggable="false" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f44b.png" style="height: 1em; width: 1em; margin: 0px 0.05em 0px 0.1em; vertical-align: -0.1em;">
+            </span>
+        </h1>
+        <p class="lead animate__animated animate__fadeInUp">A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with Asp .Net / React Native / JavaScript and some other cool libraries and frameworks.</p>
+        <div class="social-media-div">
+            <a href="https://github.com/anshumanray19" class="icon-button github" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i><span></span></a>
+            <a href="https://www.linkedin.com/in/anshuman-samantaray-851a74137/" class="icon-button linkedin" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i><span></span></a>
+            <a href="mailto:anshumansamantaray1@gmail.com" class="icon-button google" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i><span></span></a>
+            <a href="https://www.facebook.com/anshumanray29/" class="icon-button facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i><span></span></a>
+            <a href="https://www.instagram.com/anshumanray_" class="icon-button instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i><span></span></a>
+            <a href="https://x.com/Anshumanray29" class="icon-button twitter" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i><span></span></a>
         </div>
-      </nav>
-    <!--  -->
-    <div class="container-fluid">
+    </div>
+</header>
+
+
+<!-- About Section -->
+<section id="about" class="py-5" data-aos="fade-right">
+    <div class="container">
+        <h2 class="text-center">What I do</h2>
+        <p class="text-center">FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK
+            <br>⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications
+            <br>⚡ With a strong focus on creating scalable solutions, I thrive on tackling challenges and delivering impactful results.
+            <br>⚡ I am passionate about delivering high-quality software that drives innovation.
+            <br>⚡ Explore my portfolio to see my work and let's connect to discuss on next project!
+        </p>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="py-5" data-aos="fade-left">
+    <div class="container">
+        <h2 class="text-center mb-3">Tech Stacks</h2>
         <div class="row">
-            <h1 class="col-md-12 Heading" id="rolling-text">Welcome to our Travel Tours where unforgettable journeys await you!</h1><br/><br/>
-            <div class="col-md-12 subHeading">
-                    Book for
-                <span id="word"></span>
+            <div class="col-md-3 col-sm-6 text-center">
+                <i class="fab fa-html5" aria-hidden="true"></i>
+                <h4>HTML5</h4>
+            </div>
+            <div class="col-md-3 col-sm-6 text-center">
+                <i class="fab fa-css3-alt" aria-hidden="true"></i>
+                <h4>CSS3</h4>
+            </div>
+            <div class="col-md-3 col-sm-6 text-center">
+                <i class="fab fa-js" aria-hidden="true"></i>
+                <h4>JavaScript</h4>
+            </div>
+            <div class="col-md-3 col-sm-6 text-center">
+                <i class="fas fa-cogs" aria-hidden="true"></i> 
+                <h4>.NET</h4>
+            </div>
+            <div class="col-md-3 col-sm-6 text-center">
+                <i class="fab fa-react" aria-hidden="true"></i>
+                <h4>React Native</h4>
+            </div>
+            <div class="col-md-3 col-sm-6 text-center">
+                <i class="fas fa-database" aria-hidden="true"></i>
+                <h4>MS SQL</h4>
+            </div>
+            <div class="col-md-3 col-sm-6 text-center">
+                <i class="fa fa-umbrella" aria-hidden="true"></i>
+                <h4>Umbraco CMS</h4>
+            </div>
+            <div class="col-md-3 col-sm-6 text-center">
+                <i class="fab fa-wordpress" aria-hidden="true"></i>
+                <h4>WordPress CMS</h4>
             </div>
         </div>
-        <div class="row V-Gap"></div>
-        <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-8 Border-Shadow">
-              <img class="col-md-10" src="daniela-cuevas-t7YycgAoVSw-unsplash.jpg" class="Img"/><br>
-              <button class="bubble-btn">Book Your Ticket</button>
-              <p class="intro" id="intro-text">
-                Embark on an adventure of a lifetime with our meticulously<br> crafted travel tours designed to immerse you in the wonders of the world. 
-                From breathtaking landscapes to vibrant cultures, our tours promise to ignite your sense of wanderlust and create lasting memories.
-              </p>
-          </div>
-            <div class="col-md-2"></div>
-        </div>
-        <div class="row" style="height: 30px;"></div>
     </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
+<!-- Proficiency Section -->
+<section id="Proficiency" class="py-5" data-aos="flip-up">
+    <div class="container">
+        <div class="skills-bar">
+            <h2 class="skills-heading">Proficiency</h1>
+            <div class="skill">
+                <p>Frontend/Design</p>
+                <div class="meter">
+                    <span style="width: 90%;"></span>
+                </div>
+                </div>
+                <div class="skill">
+                    <p>Backend</p>
+                    <div class="meter">
+                        <span style="width: 65%;"></span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>Programming</p>
+                    <div class="meter">
+                        <span style="width: 75%;"></span>
+                    </div>
+                </div>
+            </div>
+ 
+    </div>
+</section>
+
+<!-- Study -->
+<section id="education" class="py-5 education-section" data-aos="fade-up">
+    <div class="container">
+        <h2 class="section-heading">Education</h2>
+        <div class="education-content">
+            <div class="education-item">
+                <div class="education-icon">
+                    <img src="PMEC_logo.jpg" alt="University Icon">
+                </div>
+                <h3 class="mt-2">Parala Maharaja Engineering College</h3>
+                <p>Aug 2018- Oct 2021</p>
+                <p>Ranked top 10% in the brach. Took courses about Auto CAD And SAP</p>
+                <p>8.04 CGPA</p>
+            </div>
+            <div class="education-item">
+                <div class="education-icon">
+                    <img src="DiplomaLogo.jpg" alt="University Icon">
+                </div>
+                <h3 class="mt-2">Govt. Polytechnic Dhenkanal</h3>
+                <p>June 2014- Aug 2017</p>
+                <p>Participated in the research solar water purifier and published 3 papers.</p>
+                <p>71 Percentage</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Company -->
+<section id="company" class="py-5 company-section" data-aos="fade-right">
+    <div class="container">
         <div class="row">
-          <div class="col-md-4">
-            <h3>Contact Us</h3>
-            <p><i class="fas fa-envelope"></i> Email: info@travelwebsite.com</p>
-            <p><i class="fas fa-phone"></i> Phone: +91 8866749395</p>
-          </div>
-          <div class="col-md-4">
-            <h3>Follow Us</h3>
-            <p>Connect with us on social media:</p>
-            <ul class="list-unstyled">
-                <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
-            </ul>
+            <div class="col-md-4">
+                <img src="Company_logo.jpg" alt="Company Image" class="company-image">
+            </div>
+            <div class="col-md-8">
+                <h2>Epic Minds IT</h2>
+                <p>Position: Software Developer</p>
+                <p>Nov 2022 - Current</p>
+                <p>Software Developer with 2 years of experience in full-stack development, proficient in .Net MVC, React Native, and
+                    Umbraco (CMS)</p>
+            </div>
         </div>
-          <div class="col-md-4">
-            <h3>Subscribe to our TravelTour</h3>
-            <form>
-              <div class="form-group">
-                <input type="email" class="form-control" placeholder="Enter your email">
-              </div>
-              <button type="submit" class="btn btn-primary">Subscribe</button>
-            </form>
-          </div>
+    </div>
+</section>
+<!-- Projects Section -->
+<section id="projects" class="py-5" data-aos="zoom-in">
+    <div class="container">
+        <h2 class="text-center">Projects</h2>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body Box-Shadow ASROne">
+                        <h3 class="card-title">Supplier Diversity Management System (SDMS)</h3>
+                        <p class="card-text">
+                            <ul>
+                                <li>
+                                    Created and maintained a corporate website, ensuring ADA, WCAG 2.0 AA and WCAG 2.1 AA accessibility
+                                    standards compliance using .Net Core, csharp, HTML5, CSS3, jQuery, bootstrap and MS SQL.
+                                </li>
+                                <li>
+                                    Integrated two-factor authentication (2FA) protocols in collaboration with the development team to enhance
+                                    security and meet stringent client requirements.
+                                </li>
+                                <li>
+                                    Implemented front-end enhancements and optimizations to improve user experience and accessibility for color blind users.
+                                    <a href="http://sdms.coolsofttech.com/" target="_blank">Try It Here.</a>
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body Box-Shadow ASROne">
+                        <h3 class="card-title">CoolWorks United States</h3>
+                        <p class="card-text">
+                            <ul>
+                                <li>
+                                    Maintained a recruitment web application using .NET Web Forms, Csharp, HTML, CSS, MS SQL Server,
+jQuery, and JavaScript.
+                                </li>
+                                <li>
+                                    Applied performance optimizations, enhancing scalability and responsiveness, resulting in 35% increase in user
+traffic.
+                                </li>
+                                <li>
+                                    Introduced caching mechanisms to lighten server load and improve page load times.
+                                </li>
+                                <li>
+                                    Enhanced security by implementing best practices for data protection and secure coding standards. 
+                                    <a href="https://cw.coolsoft-tech.com/vms/Login.aspx?ReturnUrl=%2fvms%2fDefault.aspx" target="_blank">Try It Here.</a>
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body Box-Shadow ASRTwo">
+                        <h3 class="card-title">Texas Education Agency (TEA)</h3>
+                        <p class="card-text">
+                            <ul>
+                                <li>
+                                    Provided support for a robust online web application using .NET MVC, Csharp, HTML, CSS, Bootstrap, MS
+SQL Server, Umbraco (CMS), jQuery, and JavaScript.
+                                </li>
+                                <li>
+                                    Executed server-side logic and data processing, including user authentication, authorization, and session management, ensuring optimal functionality.
+                                </li>
+                                <li>
+                                    Conducted regular performance tuning and optimization to maintain application efficiency and responsiveness
+resulting 20% increase in user engagement.
+                                </li>
+                                <li>
+                                    Utilized a modular architecture, allowing for easier scalability and future feature additions.
+                                    <a href="https://www.txel.org/" target="_blank">Try It Here.</a>
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body Box-Shadow ASRTwo">
+                        <h3 class="card-title">Project Oversight (POS)</h3>
+                        <p class="card-text">
+                            <ul>
+                                <li>
+                                    Created an Expo mobile application using React Native, .NET Core, MS SQL Server, and Typescript.
+                                </li>
+                                <li>
+                                    Enabled detailed evaluation of projects and employees, provided clear insights into project status, monitored employee contributions, tracked project progress with dashboards, generated weekly status reports, and optimized
+                                    resource utilization.
+                                </li>
+                                <li>
+                                    Improved user experience by adding features for daily task entries and employee record keeping.
+                                </li>
+                                <li>
+                                    Integrated push notifications to keep users informed of project updates and deadlines.
+                                </li>
+                                <li>
+                                    Conducted usability testing to gather feedback and improve 60% performance growth in application design and functionality. 
+                                    <a href="http://pos.coolsofttech.com:9002/" target="_blank">Try It Here.</a>
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <hr>
-        <p class="text-center">© 2024 TravelTour. All rights reserved.</p>
-      </div>
-    </footer>
+    </div>
+</section>
+<!-- Contact -->
+<section id="contact" class="py-5 contact-section" data-aos="zoom-out">
+    <div class="container">
+        <div class="contact-content">
+            <div class="contact-text">
+                <h2>Reach Out to me!</h2>
+                <p style="color: #868e96;">DISCUSS ON A PROJECT OR GET IN TOUCH! MY INBOX IS OPEN FOR ALL.</p>
+                <p><i class="iconify" data-icon="bi:geo-alt-fill"></i> Bangalore, Karnataka</p>
+                <div class="social-media-div">
+                    <a href="https://github.com/anshumanray19" class="icon-button github" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i><span></span></a>
+                    <a href="https://www.linkedin.com/in/anshuman-samantaray-851a74137/" class="icon-button linkedin" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i><span></span></a>
+                    <a href="mailto:anshumansamantaray1@gmail.com" class="icon-button google" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i><span></span></a>
+                    <a href="https://www.facebook.com/anshumanray29/" class="icon-button facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i><span></span></a>
+                    <a href="https://www.instagram.com/anshumanray_" class="icon-button instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i><span></span></a>
+                    <a href="https://x.com/Anshumanray29" class="icon-button twitter" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i><span></span></a>
+                </div>
+            </div>
+            <div class="contact-image">
+                <img src="Anshuman.jpeg" alt="Your Image" class="rounded-image">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="text-white text-center py-3">
+    <div class="container">
+        <p>&copy; 2024 Anshuman Samantaray</p>
+    </div>
+</footer>
+<!-- Scroll -->
+<button id="scrollToTopBtn" title="Back to top">
+    <img alt="Scroll Up" class="scrollUp" src="data:image/png;base64,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">
+</button>
+
+<script>
+    AOS.init({
+    duration: 3000,
+});
+
+window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.getElementById('loader').style.display = 'none';
+                document.getElementById('content').style.display = 'block';
+            }, 500); 
+        });
+
+$(document).ready(function() {
+$('nav a').on('click', function(event) {
+if (this.hash !== '') {
+    event.preventDefault();
+    const hash = this.hash;
+    $('html, body').animate({
+        scrollTop: $(hash).offset().top
+    }, 1000, function() {
+        window.location.hash = hash;
+    });
+}
+});
+});
+
+
+  // Generate random raindrops
+  function generateRaindrops() {
+            const header = document.querySelector('header');
+            const numOfDrops = 20; // Number of raindrops
+            const dropContainer = document.createElement('div');
+            dropContainer.classList.add('raindrop-container');
+            header.appendChild(dropContainer);
+
+            for (let i = 0; i < numOfDrops; i++) {
+                const drop = document.createElement('div');
+                drop.classList.add('raindrop');
+                drop.style.left = `${Math.random() * 100}%`; 
+                drop.style.animationDuration = `${1 + Math.random()}s`; 
+                dropContainer.appendChild(drop);
+            }
+        }
+
+        // Call the function when the document is ready
+        document.addEventListener('DOMContentLoaded', () => {
+            generateRaindrops();
+        });
+
+//scroll button
+function scrollToTop() {
+window.scrollTo({
+top: 0,
+behavior: 'smooth'
+});
+}
+document.addEventListener('DOMContentLoaded', function () {
+var scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+function checkScroll() {
+if (window.pageYOffset > 0) {
+    scrollToTopBtn.style.display = 'block';
+} else {
+    scrollToTopBtn.style.display = 'none';
+}
+}
+
+window.addEventListener('scroll', checkScroll);
+
+scrollToTopBtn.addEventListener('click', scrollToTop);
+});
+</script>
+
+<script>
+$(document).ready(function() {
+    // Check the theme preference from localStorage on page load
+    const currentTheme = localStorage.getItem('theme');
+
+    // Function to toggle theme
+    function toggleTheme(theme) {
+        $('body').removeClass('light-theme dark-theme').addClass(theme);
+        localStorage.setItem('theme', theme);
+        updateIcons(theme);
+    }
+
+    // Apply stored theme on page load
+    if (currentTheme) {
+        toggleTheme(currentTheme);
+    }
+
+    // Function to update icon visibility
+    function updateIcons(theme) {
+        if (theme === 'dark-theme') {
+            $('#sun-icon').removeClass('active');
+            $('#moon-icon').addClass('active');
+        } else {
+            $('#moon-icon').removeClass('active');
+            $('#sun-icon').addClass('active');
+        }
+    }
+
+    // Theme toggle button click event
+    $('.theme-toggle-button').click(function() {
+        const currentTheme = $('body').hasClass('dark-theme') ? 'light-theme' : 'dark-theme';
+        toggleTheme(currentTheme);
+    });
+});
+
+</script>
 
 </body>
 </html>
-
-
-<script>
-    var words = ['India', 'Japan', 'France', 'Germany', 'And', 'Other Countries also'];
-    var index = 0;
-    function changeWord(wordElement) {
-      wordElement.textContent = words[index];
-      index = (index + 1) % words.length; 
-    }
-  
-    var wordElement = document.getElementById('word');
-    setInterval(function() {
-      changeWord(wordElement);
-    }, 1000);
-    document.addEventListener("DOMContentLoaded", function() {
-  var introText = document.getElementById('intro-text');
-  introText.classList.add('intro');
-});
-  </script>
