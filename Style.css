@@ -4,8 +4,8 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    transition: background-color 0.4s, color 0.4s; 
-    -webkit-font-smoothing: antialiased !important;
+    /* transition: background-color 0.4s, color 0.4s; 
+    -webkit-font-smoothing: antialiased !important; */
     overflow-x: hidden;
 }
 
@@ -98,10 +98,10 @@ footer {
     bottom: 0;
     width: 100%;
     color: #fff; 
-    background: #00244b !important;
+    background: linear-gradient(135deg, #4a5fdc, #00244b, #171c28);
 }
 nav{
-    background-color: #00244b;
+    background: linear-gradient(135deg, #171c28, #00244b, #4a5fdc);
 }
 .NavText {
     display: inline-block;
@@ -535,7 +535,7 @@ nav{
     }
     .scrollUp {
         width: 40px;
-        margin-right: 5px;
+        margin-left: -5px;
     }
     body{
         overflow-x: hidden !important;
