@@ -167,7 +167,7 @@ nav{
     color:#2e409b;
 }
 /* Loader */
-/* Full-page loader */
+
 #loader {
     position: fixed;
     left: 0;
@@ -371,7 +371,7 @@ nav{
     background: linear-gradient(180deg, #ebf8ff 0, #3498db);
     color: #FFF;
     border: none;
-    border-radius: 40%;
+    border-radius: 50%;
     width: 60px;
     height: 60px;
     font-size: 24px;
@@ -484,7 +484,7 @@ nav{
     padding: 5px;
     width: 32px; 
     border: none !important;
-    margin-top: 20px;
+    margin-top: 18px;
 }
 .btn:focus {
     outline: none!important;
@@ -529,6 +529,16 @@ nav{
     .contact-image {
         width: 50%;
         padding-right: 0px;
+    }
+    .Ski-name{
+        margin-top: 5px;
+    }
+    .scrollUp {
+        width: 40px;
+        margin-right: 5px;
+    }
+    body{
+        overflow-x: hidden !important;
     }
 }
 

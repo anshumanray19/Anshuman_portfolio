@@ -35,7 +35,7 @@
     <!-- Navbar -->
    <!-- Navbar -->
    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <a class="navbar-brand" href="#">Anshuman Samantaray</a>
+    <a class="navbar-brand NavText" href="#">Anshuman Samantaray</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -159,19 +159,19 @@
         <div class="skills-bar">
             <h2 class="skills-heading">Proficiency</h1>
             <div class="skill">
-                <p>Frontend/Design</p>
+                <p class="Ski-name">Frontend/Design</p>
                 <div class="meter">
                     <span style="width: 90%;"></span>
                 </div>
                 </div>
                 <div class="skill">
-                    <p>Backend</p>
+                    <p class="Ski-name">Backend</p>
                     <div class="meter">
                         <span style="width: 65%;"></span>
                     </div>
                 </div>
                 <div class="skill">
-                    <p>Programming</p>
+                    <p class="Ski-name">Programming</p>
                     <div class="meter">
                         <span style="width: 75%;"></span>
                     </div>
@@ -341,7 +341,7 @@ resulting 20% increase in user engagement.
         <div class="contact-content">
             <div class="contact-text">
                 <h2>Reach Out to me!</h2>
-                <p style="color: #868e96;">DISCUSS ON A PROJECT OR GET IN TOUCH! MY INBOX IS OPEN FOR ALL.</p>
+                <p style="color: #868e96;">DISCUSS ON A PROJECT OR GET IN TOUCH! MY INBOX IS OPEN FOR YOU.</p>
                 <p><i class="iconify" data-icon="bi:geo-alt-fill"></i> Bangalore, Karnataka</p>
                 <div class="social-media-div">
                     <a href="https://github.com/anshumanray19" class="icon-button github" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i><span></span></a>
@@ -380,7 +380,7 @@ window.addEventListener('load', function() {
             setTimeout(function() {
                 document.getElementById('loader').style.display = 'none';
                 document.getElementById('content').style.display = 'block';
-            }, 500); 
+            }, 200); 
         });
 
 $(document).ready(function() {
@@ -397,11 +397,9 @@ if (this.hash !== '') {
 });
 });
 
-
-  // Generate random raindrops
   function generateRaindrops() {
             const header = document.querySelector('header');
-            const numOfDrops = 20; // Number of raindrops
+            const numOfDrops = 20; 
             const dropContainer = document.createElement('div');
             dropContainer.classList.add('raindrop-container');
             header.appendChild(dropContainer);
@@ -414,8 +412,6 @@ if (this.hash !== '') {
                 dropContainer.appendChild(drop);
             }
         }
-
-        // Call the function when the document is ready
         document.addEventListener('DOMContentLoaded', () => {
             generateRaindrops();
         });
@@ -446,22 +442,18 @@ scrollToTopBtn.addEventListener('click', scrollToTop);
 
 <script>
 $(document).ready(function() {
-    // Check the theme preference from localStorage on page load
     const currentTheme = localStorage.getItem('theme');
 
-    // Function to toggle theme
     function toggleTheme(theme) {
         $('body').removeClass('light-theme dark-theme').addClass(theme);
         localStorage.setItem('theme', theme);
         updateIcons(theme);
     }
 
-    // Apply stored theme on page load
     if (currentTheme) {
         toggleTheme(currentTheme);
     }
 
-    // Function to update icon visibility
     function updateIcons(theme) {
         if (theme === 'dark-theme') {
             $('#sun-icon').removeClass('active');
@@ -472,7 +464,6 @@ $(document).ready(function() {
         }
     }
 
-    // Theme toggle button click event
     $('.theme-toggle-button').click(function() {
         const currentTheme = $('body').hasClass('dark-theme') ? 'light-theme' : 'dark-theme';
         toggleTheme(currentTheme);
