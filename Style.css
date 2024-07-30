@@ -78,6 +78,10 @@ section {
     padding: 50px 0;
     color: #333; 
 }
+.Heading{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
 .ASROne{
     min-height: 379.2px;
 }
@@ -107,7 +111,15 @@ nav{
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
-    animation: typing 15s steps(500, end), blink-caret .95s step-end infinite;
+    animation: typing 15s steps(1000, end), blink-caret .15s step-end;
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 50%;
+    }
 }
 .navbar-nav a{
     font-size: 18px;
@@ -118,15 +130,6 @@ nav{
 }
 .nav-link:hover{
     color: #C99C27 !important;
-}
-@keyframes typing {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 100%;
-    }
 }
 ::-webkit-scrollbar {
     width: 10px;
@@ -270,11 +273,11 @@ nav{
     color: #C99C27;
 }
 /* Education */
-.education-section {
+/* .education-section {
     opacity: 0;
     transform: translateX(100%);
     animation: slideInFromRight 1s ease-out forwards;
-}
+} */
 .education-item {
     /* display: flex; */
     align-items: center;
@@ -519,6 +522,9 @@ nav{
     opacity: 1; 
 }
 @media (max-width: 767px) ,(max-width: 991px) {
+    .NavText{
+        font-size: 14px;
+    }
     .theme-toggle-button {
     margin-top: 0px !important;
     }
