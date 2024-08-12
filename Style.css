@@ -438,6 +438,9 @@ nav{
 .dark-mode a {
     color: #fff;
 }
+.card{
+    border:none;
+}
 .card-body {
     position: relative;
     overflow: hidden;
@@ -448,6 +451,7 @@ nav{
     content: '';
     background: linear-gradient(to top right, #12cc7e  0%, #3498db 100%); 
     z-index: 1;
+    color:white !important;
 }
 
 /* Light Theme */
