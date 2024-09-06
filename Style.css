@@ -1,12 +1,18 @@
 /* Base styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     height: 100%;
-    /* transition: background-color 0.4s, color 0.4s; 
-    -webkit-font-smoothing: antialiased !important; */
-    overflow-x: hidden;
+    /* transition: background-color 0.4s, color 0.4s; */
+    -webkit-font-smoothing: antialiased !important; 
+    overflow-x: hidden !important;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', 'Helvetica', sans-serif;
+}
+p {
+    font-family: 'Open Sans', 'Arial', sans-serif;
 }
 
 header {
@@ -89,8 +95,8 @@ section {
     min-height: 441.6px;
 }
 .Box-Shadow {
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px !important;
+    box-shadow: 15px 20px 20px 20px rgba(0, 0, 0, 0.1);
+    /* border-radius: 10px !important; */
 }
 .text-center i {
     font-size: 3rem; 
@@ -106,12 +112,13 @@ footer {
 }
 nav{
     background: linear-gradient(135deg, #171c28, #00244b, #4a5fdc);
+    width: 100%;
 }
 .NavText {
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
-    animation: typing 15s steps(1000, end), blink-caret .15s step-end;
+    animation: typing 8s steps(500, end), blink-caret .8s step-end;
 }
 @keyframes typing {
     from {
@@ -194,7 +201,7 @@ nav{
 .loader-gif {
     width: 150px; 
     height: 150px; 
-    animation: zoomInOut 2s infinite;
+    animation: zoomInOut 1s infinite;
 }
 @keyframes zoomInOut {
     0% {
@@ -452,6 +459,10 @@ nav{
     background: linear-gradient(to top right, #12cc7e  0%, #3498db 100%); 
     z-index: 1;
     color:white !important;
+    border-radius: 15px;
+}
+.card{
+    border-radius: 15px;
 }
 
 /* Light Theme */
@@ -547,11 +558,30 @@ nav{
         width: 40px;
         margin-left: -5px;
     }
-    body{
+    body {
+        font-family: 'Montserrat', 'Helvetica', sans-serif;
+        -webkit-font-smoothing: antialiased !important; 
         overflow-x: hidden !important;
+        
+    }
+    section , header{
+        width: 100% !important;
     }
 }
 
+@media (max-width: 991px) {
+    body {
+        overflow-x: hidden !important;
+    }
+
+    html, body {
+        max-width: 100vw; 
+        overflow-x: hidden;
+    }
+    * {
+        box-sizing: border-box;
+    }
+}
 
 
 @import 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css';
