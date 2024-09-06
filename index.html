@@ -446,7 +446,8 @@ scrollToTopBtn.addEventListener('click', scrollToTop);
 
 <script>
 $(document).ready(function() {
-    const currentTheme = localStorage.getItem('theme');
+    const defaultTheme = 'light-theme'; 
+    const currentTheme = localStorage.getItem('theme') || defaultTheme; 
 
     function toggleTheme(theme) {
         $('body').removeClass('light-theme dark-theme').addClass(theme);
@@ -454,10 +455,7 @@ $(document).ready(function() {
         updateIcons(theme);
     }
 
-    if (currentTheme) {
-        toggleTheme(currentTheme);
-    }
-
+    toggleTheme(currentTheme);
     function updateIcons(theme) {
         if (theme === 'dark-theme') {
             $('#sun-icon').removeClass('active');
@@ -469,8 +467,8 @@ $(document).ready(function() {
     }
 
     $('.theme-toggle-button').click(function() {
-        const currentTheme = $('body').hasClass('dark-theme') ? 'light-theme' : 'dark-theme';
-        toggleTheme(currentTheme);
+        const newTheme = $('body').hasClass('dark-theme') ? 'light-theme' : 'dark-theme';
+        toggleTheme(newTheme);
     });
 });
 </script>
