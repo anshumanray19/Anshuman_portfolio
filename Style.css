@@ -237,6 +237,10 @@ nav{
     color: #C99C27 !important;
     position: relative;
 }
+.card:hover .card-body {
+    animation: pulse 1.5s infinite;
+    transition: transform 0.3s ease-in-out;
+}
 .card:hover .card-body::after {
     content: ''; 
     position: absolute; 
@@ -248,6 +252,21 @@ nav{
     transition: all .3s ease;
     z-index: -1;
 }
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 10px 30px -15px #0003;
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 15px 40px -10px #0003;
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 10px 30px -15px #0003;
+    }
+}
+Update the 
 .skills-heading {
     font-size: 56px;
     font-weight: 400;
