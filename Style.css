@@ -118,7 +118,7 @@ nav{
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
-    animation: typing 8s steps(500, end), blink-caret .8s step-end;
+    animation: typing 6s steps(500, end), blink-caret .6s step-end;
 }
 @keyframes typing {
     from {
@@ -147,12 +147,12 @@ nav{
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #00244b;
+    background-color: #172c73;
     border-radius: 2px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-        background: #171c28;
+        background: #7d1aff;
 }
 /* Skills icons */
 .fa-html5{
@@ -175,6 +175,18 @@ nav{
 }
 .fa-umbrella{
     color:#2e409b;
+}
+.fa-java{
+    background: linear-gradient(180deg, #e87408, #5886a4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+.fa-angular{
+    background: linear-gradient(120deg, #7d1aff, #e048fa, #eb0239);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
 }
 /* Loader */
 
@@ -231,12 +243,15 @@ nav{
     }
 }
 .col-md-3:hover h4 {
-    color: #C99C27 !important;
+    background: linear-gradient(120deg, #7d1aff, #aaa5ff, #eb0239);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* color: #C99C27 !important; */
 }
-.col-md-3:hover i {
+/* .col-md-3:hover i {
     color: #C99C27 !important;
     position: relative;
-}
+} */
 .card:hover .card-body {
     animation: pulse 1.5s infinite;
     transition: transform 0.3s ease-in-out;
@@ -501,7 +516,7 @@ Update the
 /* Dark Theme */
 .dark-theme {
     /* background: linear-gradient(135deg, #171c28, #00244b, #4a5fdc); */
-    background-color: #171c28;
+    background-color: #27282e;
     color: #f4f4f4;
 }
 
@@ -557,7 +572,7 @@ Update the
 }
 @media (max-width: 767px) ,(max-width: 991px) {
     .NavText{
-        font-size: 14px;
+        font-size: 16px;
     }
     .theme-toggle-button {
     margin-top: 0px !important;
@@ -585,6 +600,9 @@ Update the
     }
     section , header{
         width: 100% !important;
+    }
+    .theme-toggle-button {
+        margin-bottom: 20px !important;
     }
 }
 
