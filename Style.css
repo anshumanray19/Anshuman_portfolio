@@ -88,15 +88,9 @@ section {
     font-size: 36px;
     margin-bottom: 20px;
 }
-.ASROne{
-    min-height: 379.2px;
-}
-.ASRTwo{
-    min-height: 441.6px;
-}
+
 .Box-Shadow {
     box-shadow: 15px 20px 20px 20px rgba(0, 0, 0, 0.1);
-    /* border-radius: 10px !important; */
 }
 .text-center i {
     font-size: 3rem; 
@@ -246,8 +240,8 @@ nav{
     background: linear-gradient(120deg, #7d1aff, #aaa5ff, #eb0239);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    /* color: #C99C27 !important; */
 }
+
 /* .col-md-3:hover i {
     color: #C99C27 !important;
     position: relative;
@@ -255,6 +249,11 @@ nav{
 .card:hover .card-body {
     animation: pulse 1.5s infinite;
     transition: transform 0.3s ease-in-out;
+}
+.skill:hover p{
+    background: linear-gradient(180deg, #7d1aff, #eb0239);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .card:hover .card-body::after {
     content: ''; 
@@ -313,12 +312,7 @@ Update the
 .skill:hover p{
     color: #C99C27;
 }
-/* Education */
-/* .education-section {
-    opacity: 0;
-    transform: translateX(100%);
-    animation: slideInFromRight 1s ease-out forwards;
-} */
+
 .education-item {
     /* display: flex; */
     align-items: center;
@@ -497,6 +491,7 @@ Update the
 }
 .card{
     border-radius: 15px;
+    width: 100%;
 }
 
 /* Light Theme */
