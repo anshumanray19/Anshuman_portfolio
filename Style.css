@@ -4,7 +4,8 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    /* transition: background-color 0.4s, color 0.4s; */
+    width: 100%;
+    transition: background-color 0.4s, color 0.4s;
     -webkit-font-smoothing: antialiased !important; 
     overflow-x: hidden !important;
 }
@@ -13,6 +14,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 p {
     font-family: 'Open Sans', 'Arial', sans-serif;
+    line-height: 1.5;
 }
 
 header {
@@ -85,7 +87,7 @@ section {
     color: #333; 
 }
 .Heading{
-    font-size: 36px;
+    /* font-size: 36px; */
     margin-bottom: 20px;
 }
 
@@ -130,7 +132,7 @@ nav{
     color:white !important;
 }
 .nav-link:hover{
-    color: #C99C27 !important;
+    color: #ffe76f !important;
 }
 ::-webkit-scrollbar {
     width: 10px;
@@ -243,7 +245,7 @@ nav{
 }
 
 /* .col-md-3:hover i {
-    color: #C99C27 !important;
+    color: #ffe76f !important;
     position: relative;
 } */
 .card:hover .card-body {
@@ -286,7 +288,6 @@ Update the
     font-weight: 400;
 }
 .skill {
-    line-height: 3.5vw;
     font-size: 20px;
 }
 .meter {
@@ -309,10 +310,6 @@ Update the
 .meter:hover span{
     background: linear-gradient(270deg, #47c927 0, #3498db);
 }
-.skill:hover p{
-    color: #C99C27;
-}
-
 .education-item {
     /* display: flex; */
     align-items: center;
@@ -496,7 +493,7 @@ Update the
 
 /* Light Theme */
 .light-theme {
-    background-color: #f4f4f4;
+    background-color: #eee8dc;
     color: #333;
 }
 
@@ -511,7 +508,7 @@ Update the
 /* Dark Theme */
 .dark-theme {
     /* background: linear-gradient(135deg, #171c28, #00244b, #4a5fdc); */
-    background-color: #27282e;
+    background-color: #000000;
     color: #f4f4f4;
 }
 
@@ -520,7 +517,25 @@ Update the
 .dark-theme footer,
 .dark-theme .card-body {
     color: #f4f4f4;
-    background-color: #000000;
+    background-color: #000000 !important;
+}
+.dark-theme .ArHover:hover{
+    background: linear-gradient(120deg, #7d1aff, #e048fa, #eb0239);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: #000000 !important;
+}
+.dark-theme h1:hover{
+    background: linear-gradient(120deg, #7d1aff, #e048fa, #eb0239);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: #000000 !important;
+}
+.dark-theme .ArHover:hover{
+    background: linear-gradient(120deg, #7d1aff, #e048fa, #eb0239);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: #000000 !important;
 }
 /* Additional Styling for Switch */
 .theme-toggle-button {
@@ -556,7 +571,7 @@ Update the
     transition: opacity 0.5s ease-in-out;
 }
 .theme-toggle-button:hover .iconify{
-    color: #C99C27 ;
+    color: #ffe76f ;
 }
 .theme-toggle-button .iconify.active {
     opacity: 0; 
