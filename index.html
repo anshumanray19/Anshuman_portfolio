@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anshuman's Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="AnshICon.jpg" />
-    <meta name="apple-mobile-web-app-title" content="yes">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <script src="https://example.com/fontawesome/v6.5.2/js/fontawesome.js" data-auto-replace-svg="nest"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-    <!-- Feather Icons -->
-<script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
-    <link rel="stylesheet" href="Style.css">
-    <script src="Script.js"></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Anshuman's Portfolio</title>
+        <link rel="icon" type="image/x-icon" href="AnshICon.jpg" />
+        <meta name="apple-mobile-web-app-title" content="yes">
+        
+        <!-- Bootstrap CSS and JS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+        
+        <!-- AOS Library -->
+        <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css">
+        <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+        
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        
+        <!-- Feather Icons -->
+        <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+        
+        <!-- Custom Stylesheet -->
+        <link rel="stylesheet" href="Style.css">
+        
+        <!-- Custom Script -->
+        <script src="/Script.js"></script>
+    </head>
 <body>
 
         <!-- Loader -->
@@ -35,7 +42,7 @@
     <!-- Navbar -->
    <!-- Navbar -->
    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <a class="navbar-brand NavText" href="#"><strong>Anshuman Samantaray</strong></a>
+    <a class="navbar-brand NavText" href="/index.html" aria-label="Homepage of Anshuman's Portfolio"><strong>Anshuman Samantaray</strong></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -43,33 +50,33 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#about" aria-label="About section">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#skills">Skills</a>
+                <a class="nav-link" href="#skills" aria-label="Skills section">Skills</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#education">Education</a>
+                <a class="nav-link" href="#education" aria-label="Education section">Education</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#experience">Experience</a>
+                <a class="nav-link" href="#experience" aria-label="Experience section">Experience</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link" href="#projects" aria-label="Projects section">Projects</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link" href="#contact" aria-label="Contact section">Contact</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="https://anshumanray.tiiny.site/" target="_blank">Resume</a>
+                <a class="nav-link" href="https://anshumanray.tiiny.site/" target="_blank" rel="noopener noreferrer" aria-label="Resume (Opens in a new window)">Resume</a>
             </li>
             <li class="nav-item">
                 <button class="btn btn-outline-light theme-toggle-button" aria-label="Toggle Dark Mode">
-                    <span class="iconify sunicon" data-icon="feather-sun" id="sun-icon"></span>
-                    <span class="iconify" data-icon="feather-moon" id="moon-icon"></span>
+                    <span class="iconify sunicon" data-icon="feather-sun" id="sun-icon" aria-hidden="true"></span>
+                    <span class="iconify" data-icon="feather-moon" id="moon-icon" aria-hidden="true"></span>
                 </button>
             </li>
-        </ul>
+        </ul>        
     </div>
 </nav>
 
@@ -84,20 +91,21 @@
     <div class="canvas-overlay"></div> 
     <!-- Overlay for painted effect -->
     <div class="container d-flex align-items-center flex-column">
-        <h1 class="mt-5 animate__animated animate__fadeInDown">Hi, I'm Anshuman
+        <h1 class="mt-5 animate__animated animate__fadeInDown text-light">Hi, I'm Anshuman
             <span class="ASRHi">
                 <img alt="👋" draggable="false" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f44b.png" style="height: 1em; width: 1em; margin: 0px 0.05em 0px 0.1em; vertical-align: -0.1em;">
             </span>
         </h1>
         <p class="lead animate__animated animate__fadeInUp">A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with Asp .Net / React Native / JavaScript and some other cool libraries and frameworks.</p>
         <div class="social-media-div">
-            <a href="https://github.com/anshumanray19" class="icon-button github" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i><span></span></a>
-            <a href="https://www.linkedin.com/in/anshuman-samantaray-851a74137/" class="icon-button linkedin" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i><span></span></a>
-            <a href="mailto:anshumansamantaray1@gmail.com" class="icon-button google" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i><span></span></a>
-            <a href="https://www.facebook.com/anshumanray29/" class="icon-button facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i><span></span></a>
-            <a href="https://www.instagram.com/anshumanray_" class="icon-button instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i><span></span></a>
-            <a href="https://x.com/Anshumanray29" class="icon-button twitter" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i><span></span></a>
+            <a href="https://github.com/anshumanray19" class="icon-button github" target="_blank" rel="noopener noreferrer" aria-describedby="new-window"><i class="fab fa-github"></i><span></span></a>
+            <a href="https://www.linkedin.com/in/anshuman-samantaray-851a74137/" class="icon-button linkedin" target="_blank" rel="noopener noreferrer" aria-describedby="new-window"><i class="fab fa-linkedin-in"></i><span></span></a>
+            <a href="mailto:anshumansamantaray1@gmail.com" class="icon-button google" target="_blank" rel="noopener noreferrer" aria-describedby="new-window"><i class="fas fa-envelope"></i><span></span></a>
+            <a href="https://www.facebook.com/anshumanray29/" class="icon-button facebook" target="_blank" rel="noopener noreferrer" aria-describedby="new-window"><i class="fab fa-facebook-f"></i><span></span></a>
+            <a href="https://www.instagram.com/anshumanray_" class="icon-button instagram" target="_blank" rel="noopener noreferrer" aria-describedby="new-window"><i class="fab fa-instagram"></i><span></span></a>
+            <a href="https://x.com/Anshumanray29" class="icon-button twitter" target="_blank" rel="noopener noreferrer" aria-describedby="new-window"><i class="fab fa-twitter"></i><span></span></a>
         </div>
+        <div id="new-window" style="display:none;">Opens in a new window</div>
     </div>
 </header>
 
@@ -204,7 +212,7 @@
         <h1 class="section-heading mb-2">Work Experience</h1>
         <div class="row">
             <div class="col-md-2">
-                <img src="Company_logo.jpg" alt="Company Image" class="company-image">
+                <img src="Company_logo.jpg" alt="Company Image" class="company-image" width="200" height="100">
             </div>
             <div class="col-md-8 ArHover">
                 <h2>Epic Minds IT</h2>
@@ -237,7 +245,7 @@
                                 </li>
                                 <li>
                                     Implemented front-end enhancements and optimizations to improve user experience and accessibility for color blind users.
-                                  <br/>  <a href="http://sdms.coolsofttech.com/" target="_blank">Try It Here.</a>
+                                  <br/>  <a href="http://sdms.coolsofttech.com/" target="_blank" rel="noopener noreferrer" title="SDMS (Opens in a new window)">Try It Here.</a>
                                 </li>
                             </ul>
                         </p>
@@ -263,7 +271,7 @@ resulting 20% increase in user engagement.
                                 </li>
                                 <li>
                                     Utilized a modular architecture, allowing for easier scalability and future feature additions.
-                                 <br/> <a href="https://www.txel.org/" target="_blank">Try It Here.</a>
+                                 <br/> <a href="https://www.txel.org/" target="_blank"  rel="noopener noreferrer" title="txel (Opens in a new window)">Try It Here.</a>
                                 </li>
                             </ul>
                         </p>
@@ -291,7 +299,7 @@ resulting 20% increase in user engagement.
                                 </li>
                                 <li>
                                     Conducted usability testing to gather feedback and improve 60% performance growth in application design and functionality. 
-                                   <br/> <a href="http://pos.coolsofttech.com:9002/" target="_blank">Try It Here.</a>
+                                   <br/> <a href="http://pos.coolsofttech.com:9002/" target="_blank" rel="noopener noreferrer" title="coolsoft-tech (Opens in a new window)">Try It Here.</a>
                                 </li>
                             </ul>
                         </p>
@@ -317,7 +325,7 @@ traffic.
                                 </li>
                                 <li>
                                     Enhanced security by implementing best practices for data protection and secure coding standards. 
-                                    <br/>  <a href="https://cw.coolsoft-tech.com/vms/Login.aspx?ReturnUrl=%2fvms%2fDefault.aspx" target="_blank">Try It Here.</a>
+                                    <br/>  <a href="https://cw.coolsoft-tech.com/vms/Login.aspx?ReturnUrl=%2fvms%2fDefault.aspx" target="_blank" rel="noopener noreferrer" title="Coolworks (Opens in a new window)">Try It Here.</a>
                                 </li>
                             </ul>
                         </p>
@@ -335,7 +343,7 @@ traffic.
         <div class="education-content">
             <div class="education-item ArHover">
                 <div class="education-icon">
-                    <img src="PMEC_logo.jpg" alt="University Icon">
+                    <img src="PMEC_logo.jpg" alt="University Icon" width="75" height="75">
                 </div>
                 <h3 class="mt-2">Parala Maharaja Engineering College</h3>
                 <p>Aug 2018- Oct 2021</p>
@@ -344,7 +352,7 @@ traffic.
             </div>
             <div class="education-item ArHover">
                 <div class="education-icon">
-                    <img src="DiplomaLogo.jpg" alt="University Icon">
+                    <img src="DiplomaLogo.jpg" alt="University Icon" width="75" height="75">
                 </div>
                 <h3 class="mt-2">Govt. Polytechnic Dhenkanal</h3>
                 <p>June 2014- Aug 2017</p>
@@ -364,16 +372,17 @@ traffic.
                 <p style="color: #868e96;">DISCUSS ON A PROJECT OR GET IN TOUCH! MY INBOX IS OPEN FOR YOU.</p>
                 <p><i class="iconify" data-icon="bi:geo-alt-fill"></i> Bangalore, Karnataka</p>
                 <div class="social-media-div">
-                    <a href="https://github.com/anshumanray19" class="icon-button github" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i><span></span></a>
-                    <a href="https://www.linkedin.com/in/anshuman-samantaray-851a74137/" class="icon-button linkedin" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i><span></span></a>
-                    <a href="mailto:anshumansamantaray1@gmail.com" class="icon-button google" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i><span></span></a>
-                    <a href="https://www.facebook.com/anshumanray29/" class="icon-button facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i><span></span></a>
-                    <a href="https://www.instagram.com/anshumanray_" class="icon-button instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i><span></span></a>
-                    <a href="https://x.com/Anshumanray29" class="icon-button twitter" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i><span></span></a>
+                    <a href="https://github.com/anshumanray19" class="icon-button github" target="_blank" rel="noopener noreferrer" aria-describedby="new-window"> <i class="fab fa-github"></i><span></span></a>
+                    <a href="https://www.linkedin.com/in/anshuman-samantaray-851a74137/" class="icon-button linkedin" target="_blank" rel="noopener noreferrer" aria-describedby="new-window"><i class="fab fa-linkedin-in"></i><span></span></a>
+                    <a href="mailto:anshumansamantaray1@gmail.com" class="icon-button google" target="_blank" rel="noopener noreferrer" aria-describedby="new-window"><i class="fas fa-envelope"></i><span></span></a>
+                    <a href="https://www.facebook.com/anshumanray29/" class="icon-button facebook" target="_blank" rel="noopener noreferrer" aria-describedby="new-window"><i class="fab fa-facebook-f"></i><span></span></a>
+                    <a href="https://www.instagram.com/anshumanray_" class="icon-button instagram" target="_blank" rel="noopener noreferrer" aria-describedby="new-window"><i class="fab fa-instagram"></i><span></span></a>
+                    <a href="https://x.com/Anshumanray29" class="icon-button twitter" target="_blank" rel="noopener noreferrer" aria-describedby="new-window"><i class="fab fa-twitter"></i><span></span></a>
                 </div>
+                <div id="new-window" style="display:none;">Opens in a new window</div>
             </div>
             <div class="contact-image">
-                <img src="Anshuman.jpeg" alt="Your Image" class="rounded-image">
+                <img src="Anshuman.jpeg" alt="Anshuman" class="rounded-image">
             </div>
         </div>
     </div>
