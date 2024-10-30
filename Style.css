@@ -104,11 +104,17 @@ footer {
     bottom: 0;
     width: 100%;
     color: #fff; 
-    background: linear-gradient(135deg, #4a5fdc, #00244b, #171c28);
+    background: linear-gradient(135deg, #00244b, #0a66c2, #00244b);
+}
+footer:hover {
+    background: linear-gradient(135deg, #0a66c2, #171c28, #0a66c2);
 }
 nav{
-    background: linear-gradient(135deg, #171c28, #00244b, #4a5fdc);
+    background: linear-gradient(135deg, #001549, #3596ff, #070a1f);
     width: 100%;
+}
+nav:hover{
+    background: linear-gradient(135deg, #3596ff, #00244b, #001549);
 }
 .NavText {
     display: inline-block;
@@ -477,15 +483,20 @@ Update the
 .card-body {
     position: relative;
     overflow: hidden;
-    background-color: #fff; 
 }
-
+.light-theme .card-body{
+    border-radius: 15px;
+    background: linear-gradient(to top right, #eee8dc  0%, #dac396 100%); 
+}
 .card-body:hover {
     content: '';
-    background: linear-gradient(to top right, #12cc7e  0%, #3498db 100%); 
+    background: linear-gradient(120deg, #7d1aff, #e048fa, #eb0239);
     z-index: 1;
-    color:white !important;
+    color:rgb(255, 255, 255) !important;
     border-radius: 15px;
+}
+.card-body:hover a{
+ color:rgb(248, 220, 8);
 }
 .card{
     border-radius: 15px;
@@ -500,15 +511,14 @@ Update the
 
 .light-theme header,
 .light-theme section,
-.light-theme footer,
-.light-theme .card-body {
+.light-theme footer
+ {
     color: #333;
     background-color: #fff;
 }
 
 /* Dark Theme */
 .dark-theme {
-    /* background: linear-gradient(135deg, #171c28, #00244b, #4a5fdc); */
     background-color: #000000;
     color: #f4f4f4;
 }
@@ -520,17 +530,17 @@ Update the
     color: #f4f4f4;
     background-color: #000000 !important;
 }
-.dark-theme .ArHover:hover{
+ h1:hover{
     background: linear-gradient(120deg, #7d1aff, #e048fa, #eb0239);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-color: #000000 !important;
 }
-.dark-theme h1:hover{
+.light-theme .ArHover:hover{
     background: linear-gradient(120deg, #7d1aff, #e048fa, #eb0239);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-color: #000000 !important;
+    background-color: white !important;
 }
 .dark-theme .ArHover:hover{
     background: linear-gradient(120deg, #7d1aff, #e048fa, #eb0239);

@@ -56,13 +56,13 @@
                 <a class="nav-link" href="#skills" aria-label="Skills section">Skills</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#education" aria-label="Education section">Education</a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link" href="#experience" aria-label="Experience section">Experience</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#projects" aria-label="Projects section">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#education" aria-label="Education section">Education</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#contact" aria-label="Contact section">Contact</a>
@@ -71,7 +71,7 @@
                 <a class="nav-link" href="https://anshumanray.tiiny.site/" target="_blank" rel="noopener noreferrer" aria-label="Resume (Opens in a new window)">Resume</a>
             </li>
             <li class="nav-item">
-                <button class="btn btn-outline-light theme-toggle-button" aria-label="Toggle Dark Mode">
+                <button class="btn theme-toggle-button" aria-label="Toggle Dark Mode">
                     <span class="iconify sunicon" data-icon="feather-sun" id="sun-icon" aria-hidden="true"></span>
                     <span class="iconify" data-icon="feather-moon" id="moon-icon" aria-hidden="true"></span>
                 </button>
@@ -111,10 +111,10 @@
 
 
 <!-- About Section -->
-<section id="about" class="ArHover" class="py-5" data-aos="fade-right">
+<section id="about" class="py-5" data-aos="fade-right">
     <div class="container">
-        <h1 class="Heading text-center">What I do</h1>
-        <p class="text-center">FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK
+        <h1 class="Heading text-center ArHover">What I do</h1>
+        <p class="text-center ArHover2 ArHover">FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK
             <br>⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications
             <br>⚡ With a strong focus on creating scalable solutions, I thrive on tackling challenges and delivering impactful results.
             <br>⚡ I am passionate about delivering high-quality software that drives innovation.
@@ -419,7 +419,7 @@ if (this.hash !== '') {
     const hash = this.hash;
     $('html, body').animate({
         scrollTop: $(hash).offset().top
-    }, 1000, function() {
+    }, 1500, function() {
         window.location.hash = hash;
     });
 }
