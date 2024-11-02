@@ -1,6 +1,6 @@
 /* Base styles */
 body {
-    font-family: 'Roboto', 'Arial', sans-serif;
+    font-family: Inter Tight, sans-serif;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -154,7 +154,7 @@ nav:hover{
 }
 
 ::-webkit-scrollbar-thumb:hover {
-        background: #7d1aff;
+    background: linear-gradient(120deg, #7d1aff, #e048fa, #eb0239);
 }
 /* Skills icons */
 .fa-html5{
@@ -528,13 +528,13 @@ Update the
 .dark-theme footer,
 .dark-theme .card-body {
     color: #f4f4f4;
-    background-color: #000000 !important;
+    background-color: #0f0f0f !important;
 }
  h1:hover{
     background: linear-gradient(120deg, #7d1aff, #e048fa, #eb0239);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-color: #000000 !important;
+    background-color: #0f0f0f !important;
 }
 .light-theme .ArHover:hover{
     background: linear-gradient(120deg, #7d1aff, #e048fa, #eb0239);
@@ -546,7 +546,7 @@ Update the
     background: linear-gradient(120deg, #7d1aff, #e048fa, #eb0239);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-color: #000000 !important;
+    background-color: #0f0f0f !important;
 }
 /* Additional Styling for Switch */
 .theme-toggle-button {
@@ -611,10 +611,10 @@ Update the
     }
     .scrollUp {
         width: 40px;
-        margin-left: -5px;
+        margin-left: -10px;
     }
     body {
-        font-family: 'Montserrat', 'Helvetica', sans-serif;
+        font-family: Inter Tight, sans-serif;
         -webkit-font-smoothing: antialiased !important; 
         overflow-x: hidden !important;
         
@@ -641,7 +641,7 @@ Update the
     }
     .scrollUp {
         width: 40px;
-        margin-left: -8px;
+        margin-left: -10px;
     }
 }
 
