@@ -1,5 +1,5 @@
 AOS.init({
-    duration: 1500,
+    duration: 2000,
 });
 
 window.addEventListener('load', function() {
@@ -16,7 +16,7 @@ if (this.hash !== '') {
     const hash = this.hash;
     $('html, body').animate({
         scrollTop: $(hash).offset().top
-    }, 1000, function() {
+    }, 1500, function() {
         window.location.hash = hash;
     });
 }
@@ -66,7 +66,7 @@ scrollToTopBtn.addEventListener('click', scrollToTop);
 });
 
 
-
+// Theme specific
 $(document).ready(function() {
     const defaultTheme = 'light-theme'; 
     const currentTheme = localStorage.getItem('theme') || defaultTheme; 

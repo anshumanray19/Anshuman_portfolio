@@ -314,7 +314,7 @@ Update the
     position: relative;
 }
 .meter:hover span{
-    background: linear-gradient(270deg, #47c927 0, #3498db);
+    background: linear-gradient(120deg, red,yellow, #33ff00 );
 }
 .education-item {
     /* display: flex; */
