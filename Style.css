@@ -103,19 +103,45 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-    color: #fff; 
+    color: #fff;
     background: linear-gradient(135deg, #00244b, #0a66c2, #00244b);
+    background-size: 400% 400%;
+    transition: background 0.3s ease-in-out; 
+    animation: footer-gradient-animation 5s ease infinite; 
 }
-footer:hover {
-    background: linear-gradient(135deg, #0a66c2, #171c28, #0a66c2);
+
+@keyframes footer-gradient-animation {
+    0% {
+        background-position: 0% 50%; 
+    }
+    50% {
+        background-position: 100% 50%; 
+    }
+    100% {
+        background-position: 0% 50%; 
+    }
 }
-nav{
+
+nav {
     background: linear-gradient(135deg, #001549, #3596ff, #070a1f);
     width: 100%;
+    transition: background 0.3s ease-in-out; 
+    background-size: 400% 400%; 
+    animation: gradient-animation 5s ease infinite; 
 }
-nav:hover{
-    background: linear-gradient(135deg, #3596ff, #00244b, #001549);
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%; 
+    }
+    50% {
+        background-position: 100% 50%; 
+    }
+    100% {
+        background-position: 0% 50%; 
+    }
 }
+
 .NavText {
     display: inline-block;
     overflow: hidden;
@@ -250,14 +276,7 @@ nav:hover{
     -webkit-text-fill-color: transparent;
 }
 
-/* .col-md-3:hover i {
-    color: #ffe76f !important;
-    position: relative;
-} */
-.card:hover .card-body {
-    animation: pulse 1.5s infinite;
-    transition: transform 0.3s ease-in-out;
-}
+
 .skill:hover p{
     background: linear-gradient(180deg, #7d1aff, #eb0239);
     -webkit-background-clip: text;
@@ -288,7 +307,7 @@ nav:hover{
         box-shadow: 0 10px 30px -15px #0003;
     }
 }
-Update the 
+
 .skills-heading {
     font-size: 56px;
     font-weight: 400;
@@ -484,10 +503,25 @@ Update the
     position: relative;
     overflow: hidden;
 }
-.light-theme .card-body{
+.light-theme .card-body {
     border-radius: 15px;
-    background: linear-gradient(to top right, #eee8dc  0%, #dac396 100%); 
+    background: linear-gradient(to top right, #fff89d 0%, #f4f2ee 100%);
+    background-size: 400% 400%; 
+    animation: card-gradient-animation 5s ease infinite; 
 }
+
+@keyframes card-gradient-animation {
+    0% {
+        background-position: 0% 50%; 
+    }
+    50% {
+        background-position: 100% 50%; 
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 .card-body:hover {
     content: '';
     background: linear-gradient(120deg, #7d1aff, #e048fa, #eb0239);
@@ -497,6 +531,10 @@ Update the
 }
 .card-body:hover a{
  color:rgb(248, 220, 8);
+}
+.card:hover .card-body {
+    animation: pulse 1.5s infinite;
+    transition: transform 0.3s ease-in-out;
 }
 .card{
     border-radius: 15px;
