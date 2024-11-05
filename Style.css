@@ -128,6 +128,11 @@ nav {
     transition: background 0.3s ease-in-out; 
     background-size: 400% 400%; 
     animation: gradient-animation 5s ease infinite; 
+    position: fixed; /* Fix the navbar position */
+    top: 0; /* Position at the top */
+    left: 0; /* Align with left */
+    right: 0; /* Align with right */
+    z-index: 1000;
 }
 
 @keyframes gradient-animation {
