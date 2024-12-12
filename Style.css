@@ -104,7 +104,7 @@ footer {
     bottom: 0;
     width: 100%;
     color: #fff;
-    background: linear-gradient(135deg, #00244b, #0a66c2, #00244b);
+    background: linear-gradient(135deg, #00244b, #0a66c2, #3732bd);
     background-size: 400% 400%;
     transition: background 0.3s ease-in-out; 
     animation: footer-gradient-animation 5s ease infinite; 
@@ -123,15 +123,15 @@ footer {
 }
 
 nav {
-    background: linear-gradient(135deg, #001549, #3596ff, #070a1f);
+    background: linear-gradient(135deg, #001549, #3596ff, #3732bd);
     width: 100%;
     transition: background 0.3s ease-in-out; 
     background-size: 400% 400%; 
     animation: gradient-animation 5s ease infinite; 
-    position: fixed; /* Fix the navbar position */
-    top: 0; /* Position at the top */
-    left: 0; /* Align with left */
-    right: 0; /* Align with right */
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
     z-index: 1000;
 }
 
@@ -185,7 +185,7 @@ nav {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(120deg, #7d1aff, #e048fa, #eb0239);
+    background: linear-gradient(120deg, #dd63ff, #e048fa, #eb0239);
 }
 /* Skills icons */
 .fa-html5{
@@ -478,7 +478,7 @@ nav {
     width: 2.6rem;
 }
 .github i {
-    background-color: #333;
+    background: linear-gradient(135deg, #dd63ff, #0c1c3b, #3732bd);
 }
 .google i {
     background-color: #ea4335;
@@ -529,7 +529,7 @@ nav {
 
 .card-body:hover {
     content: '';
-    background: linear-gradient(120deg, #7d1aff, #e048fa, #eb0239);
+    background: linear-gradient(135deg, #dd63ff, #0c1c3b, #3732bd);
     z-index: 1;
     color:rgb(255, 255, 255) !important;
     border-radius: 15px;
