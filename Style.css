@@ -221,6 +221,19 @@ nav {
     -webkit-text-fill-color: transparent;
     display: inline-block;
 }
+.fab, .fas , .fa{
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.fab:hover {
+    transform: scale(1.2);
+}
+.fas:hover {
+    transform: scale(1.2);
+}
+.fa:hover {
+    transform: scale(1.2);
+}
 /* Loader */
 
 #loader {
@@ -413,9 +426,16 @@ nav {
 }
 
 .company-image {
+    width: 200px;
     max-width: 100%;
     height: auto;
     border-radius: 100%; 
+    background: white;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.company-image:hover {
+    transform: scale(1.1);
 }
 
 .company-section h2 {
