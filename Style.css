@@ -8,6 +8,8 @@ body {
     transition: background-color 0.4s, color 0.4s;
     -webkit-font-smoothing: antialiased !important; 
     overflow-x: hidden !important;
+    cursor: none;
+    scroll-behavior: smooth;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Josefin Sans', sans-serif;
@@ -66,6 +68,10 @@ video {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.3); 
+}
+.ArType{
+    position: relative;
+    z-index: 999;
 }
 .ASRHi {
     display: inline-block;
@@ -258,11 +264,11 @@ nav {
 }
 /* GIF Styling */
 .loader-gif {
-    width: 150px; 
-    height: 150px; 
+    width: 300px; 
+    height: 300px; 
     animation: zoomInOut 1s infinite;
 }
-@keyframes zoomInOut {
+/* @keyframes zoomInOut {
     0% {
         transform: scale(1);
     }
@@ -272,11 +278,11 @@ nav {
     100% {
         transform: scale(1);
     }
-}
+} */
 .loading-text {
     margin-top: 20px; 
-    font-size: 1.5em; 
-    color:#fcb64c;
+    font-size: 2rem; 
+    color:#3095a2;
     animation: fadeInOut 2s infinite;
 }
 
@@ -333,6 +339,8 @@ nav {
 }
 .skill {
     font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px;
 }
 .meter {
     background: #f3efef;
@@ -414,9 +422,9 @@ nav {
 }
 
 .rounded-image {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+    width: 250px;
+    height: 100%;
+    border-radius: 25%;
     border: 5px solid #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -709,5 +717,33 @@ nav {
     }
 }
 
+.EDLogo{
+    border-radius: 50px;
+}
+
+/* Cursor Effects */
+    .cursor-dot {
+      position: fixed;
+      top: 0; left: 0;
+      width: 8px;
+      height: 8px;
+      background: #02d1ff;
+      border-radius: 50%;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      z-index: 9999;
+    }
+    .cursor-circle {
+      position: fixed;
+      top: 0; left: 0;
+      width: 40px;
+      height: 40px;
+      border: 2px solid #153d5c;
+      border-radius: 50%;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      z-index: 9998;
+      transition: transform 0.1s ease-out;
+    }
 
 @import 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css';

@@ -1,133 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Anshuman Portfolio</title>
-        <link rel="icon" type="image/x-icon" href="AnshICon.jpg" />
-        <meta name="apple-mobile-web-app-title" content="yes">
-        <link rel="apple-touch-icon" href="AnshICon.jpg">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        <!-- Bootstrap CSS and JS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-        
-        <!-- AOS Library -->
-        <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css">
-        <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-        
-        <!-- Animate.css -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-        
-        <!-- Font Awesome Icons -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-        
-        <!-- Feather Icons -->
-        <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
-        
-        <!-- Custom Stylesheet -->
-        <link rel="stylesheet" href="Style.css">
-        
-        <!-- Custom Script -->
-        <script src="Script.js" defer></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anshuman Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="AnshICon.jpg" />
+    <meta name="apple-mobile-web-app-title" content="yes">
+    <link rel="apple-touch-icon" href="AnshICon.jpg">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-        <!-- Manifest Json file -->
-        <link rel="manifest" href="manifest.json">
-    </head>
-<body>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- AOS and Animate.css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Iconify -->
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <!-- Typed.js for typing effect -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-        <!-- Loader -->
-        <div id="loader">
-            <img src="Loader.gif" alt="Loading..." class="loader-gif">
-            <div class="loading-text">Loading...</div>
+    <link rel="stylesheet" href="Style.css">
+    <script src="Script.js" defer></script>
+    <link rel="manifest" href="manifest.json">
+</head>
+<body class="light-theme">
+
+<!-- Loader -->
+<div id="loader">
+    <img src="original.gif" alt="Loading..." class="loader-gif">
+    <div class="loading-text">Loading...</div>
+</div>
+<!-- Cursor Effects -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-circle"></div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand NavText" href="/Anshuman_portfolio"><strong>Anshuman Samantaray</strong></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://anshumanray.tiiny.site/" target="_blank" rel="noopener noreferrer">Resume</a></li>
+                <li class="nav-item">
+                    <button class="btn theme-toggle-button" aria-label="Toggle Dark Mode">
+                        <span class="iconify sunicon" data-icon="feather-sun" id="sun-icon"></span>
+                        <span class="iconify" data-icon="feather-moon" id="moon-icon"></span>
+                    </button>
+                </li>
+            </ul>
         </div>
-<!-- Loader End -->
-    <!-- Navbar -->
-   <!-- Navbar -->
-   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <a class="navbar-brand NavText" href="/Anshuman_portfolio" aria-label="Homepage of Anshuman's Portfolio"><strong>Anshuman Samantaray</strong></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#about" aria-label="About section">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#skills" aria-label="Skills section">Skills</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#experience" aria-label="Experience section">Experience</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#projects" aria-label="Projects section">Projects</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#education" aria-label="Education section">Education</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#contact" aria-label="Contact section">Contact</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://anshumanray.tiiny.site/" target="_blank" rel="noopener noreferrer" aria-label="Resume (Opens in a new window)">Resume</a>
-            </li>
-            <li class="nav-item">
-                <button class="btn theme-toggle-button" aria-label="Toggle Dark Mode">
-                    <span class="iconify sunicon" data-icon="feather-sun" id="sun-icon" aria-hidden="true"></span>
-                    <span class="iconify" data-icon="feather-moon" id="moon-icon" aria-hidden="true"></span>
-                </button>
-            </li>
-        </ul>        
     </div>
 </nav>
 
 <!-- Header -->
-<header class="bg-primary text-white text-center">
-    <div class="video-container">
+<header class="text-white text-center position-relative" data-aos="fade-in">
+    <div class="video-container parallax">
         <video autoplay muted loop id="headerVideo">
-            <source src="RainDrop.mp4" type="video/mp4">
-            Your browser does not support the video tag.
+            <source src="ABU.mp4" type="video/mp4">
         </video>
     </div>
-    <div class="canvas-overlay"></div> 
-    <!-- Overlay for painted effect -->
+    <div class="canvas-overlay gradient-overlay"></div>
     <div class="container d-flex align-items-center flex-column">
-        <h1 class="mt-5 animate__animated animate__fadeInDown text-light">Hi, I'm Anshuman
-            <span class="ASRHi">
-                <img alt="👋" draggable="false" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f44b.png" style="height: 1em; width: 1em; margin: 0px 0.05em 0px 0.1em; vertical-align: -0.1em;">
-            </span>
-        </h1>
-        <p class="lead animate__animated animate__fadeInUp">A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with Asp .Net / React Native / JavaScript and some other cool libraries and frameworks.</p>
-        <div class="social-media-div">
-            <a href="https://github.com/anshumanray19" class="icon-button github" target="_blank" rel="noopener noreferrer" aria-describedby="new-window"><i class="fab fa-github"></i><span></span></a>
-            <a href="https://www.linkedin.com/in/anshuman-samantaray-851a74137/" class="icon-button linkedin" target="_blank" rel="noopener noreferrer" aria-describedby="new-window"><i class="fab fa-linkedin-in"></i><span></span></a>
-            <a href="mailto:anshumansamantaray1@gmail.com" class="icon-button google" target="_blank" rel="noopener noreferrer" aria-describedby="new-window"><i class="fas fa-envelope"></i><span></span></a>
-            <a href="https://www.facebook.com/anshumanray29/" class="icon-button facebook" target="_blank" rel="noopener noreferrer" aria-describedby="new-window"><i class="fab fa-facebook-f"></i><span></span></a>
-            <a href="https://www.instagram.com/anshumanray_" class="icon-button instagram" target="_blank" rel="noopener noreferrer" aria-describedby="new-window"><i class="fab fa-instagram"></i><span></span></a>
-            <a href="https://x.com/Anshumanray29" class="icon-button twitter" target="_blank" rel="noopener noreferrer" aria-describedby="new-window">
-                <i class="fab fa-x-twitter"></i><span></span>
-            </a>
-        </div>
-        <div id="new-window" style="display:none;">Opens in a new window</div>
+    <h1 class="mt-5 text-light">
+        <span id="typed-text" class="ArType"></span> 
+        <span class="ASRHi"><img alt="👋" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f44b.png" style="height:1em;width:1em;vertical-align: -0.1em;"></span>
+    </h1>
+    <p class="lead" data-aos="fade-up" data-aos-delay="200">
+        A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with Asp .Net / React Native / JavaScript and some other cool libraries and frameworks.
+    </p>
+    <div class="social-media-div" data-aos="fade-up" data-aos-delay="400">
+        <a href="https://github.com/anshumanray19" class="icon-button github hover-scale" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/anshuman-samantaray-851a74137/" class="icon-button linkedin hover-scale" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:anshumansamantaray1@gmail.com" class="icon-button google hover-scale" target="_blank"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.facebook.com/anshumanray29/" class="icon-button facebook hover-scale" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/anshumanray_" class="icon-button instagram hover-scale" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/Anshumanray29" class="icon-button twitter hover-scale" target="_blank"><i class="fab fa-x-twitter"></i></a>
     </div>
+</div>
 </header>
 
-
 <!-- About Section -->
-<section id="about" class="py-5" data-aos="fade-right">
+<section id="about" class="py-5" data-aos="fade-right" data-aos-duration="1000">
     <div class="container">
-        <h1 class="Heading text-center ArHover">What I do</h1>
-        <p class="text-center ArHover2 ArHover">FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK
-            <br>⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications
-            <br>⚡ With a strong focus on creating scalable solutions, I thrive on tackling challenges and delivering impactful results.
-            <br>⚡ I am passionate about delivering high-quality software that drives innovation.
-            <br>⚡ Explore my portfolio to see my work and let's connect to discuss on next project!
+        <h1 class="text-center">What I Do</h1>
+        <p class="text-center ArHover" data-aos="fade-up" data-aos-delay="100">
+            FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK<br>
+⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications<br>
+⚡ With a strong focus on creating scalable solutions, I thrive on tackling challenges and delivering impactful results.<br>
+⚡ I am passionate about delivering high-quality software that drives innovation.<br>
+⚡ Explore my portfolio to see my work and let's connect to discuss on next project!<br>
         </p>
     </div>
 </section>
@@ -135,95 +116,45 @@
 <!-- Skills Section -->
 <section id="skills" class="py-5" data-aos="flip-left">
     <div class="container">
-        <h1 class="Heading text-center mb-2">Tech Stacks</h1>
-        <div class="row">
-            <div class="col-md-3 col-sm-6 text-center">
-                <i class="fab fa-html5" aria-hidden="true"></i>
-                <h4>HTML5</h4>
-            </div>
-            <div class="col-md-3 col-sm-6 text-center">
-                <i class="fab fa-css3-alt" aria-hidden="true"></i>
-                <h4>CSS3</h4>
-            </div>
-            <div class="col-md-3 col-sm-6 text-center">
-                <i class="fab fa-js" aria-hidden="true"></i>
-                <h4>JavaScript</h4>
-            </div>
-            <div class="col-md-3 col-sm-6 text-center">
-                <i class="fas fa-cogs" aria-hidden="true"></i> 
-                <h4>.NET</h4>
-            </div>
-            <div class="col-md-3 col-sm-6 text-center">
-                <i class="fab fa-react" aria-hidden="true"></i>
-                <h4>React Native</h4>
-            </div>
-            <div class="col-md-3 col-sm-6 text-center">
-                <i class="fab fa-java" aria-hidden="true"></i>
-                <h4>Java</h4>
-                
-            </div>
-            <div class="col-md-3 col-sm-6 text-center">
-                <i class="fab fa-angular" aria-hidden="true"></i>
-                <h4>Angular</h4>
-                
-            </div>
-            <div class="col-md-3 col-sm-6 text-center">
-                <i class="fas fa-database" aria-hidden="true"></i>
-                <h4>MS SQL</h4>
-               
-            </div>
-            <div class="col-md-3 col-sm-6 text-center"></div>
-            <div class="col-md-3 col-sm-6 text-center">
-                <i class="fab fa-wordpress" aria-hidden="true"></i>
-                <h4>WordPress CMS</h4>
-            </div>
-            <div class="col-md-3 col-sm-6 text-center">
-                <i class="fa fa-umbrella" aria-hidden="true"></i>
-                <h4>Umbraco CMS</h4>
-            </div>
-            <div class="col-md-3 col-sm-6 text-center"></div>
+        <h1 class="text-center mb-4">Tech Stacks</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-3 col-sm-6 text-center" data-aos="zoom-in" data-aos-delay="100"><i class="fab fa-html5 fa-3x"></i><h4>HTML5</h4></div>
+            <div class="col-md-3 col-sm-6 text-center" data-aos="zoom-in" data-aos-delay="200"><i class="fab fa-css3-alt fa-3x"></i><h4>CSS3</h4></div>
+            <div class="col-md-3 col-sm-6 text-center" data-aos="zoom-in" data-aos-delay="300"><i class="fab fa-js fa-3x"></i><h4>JavaScript</h4></div>
+            <div class="col-md-3 col-sm-6 text-center" data-aos="zoom-in" data-aos-delay="400"><i class="fas fa-cogs fa-3x"></i><h4>.NET</h4></div>
+            <div class="col-md-3 col-sm-6 text-center" data-aos="zoom-in" data-aos-delay="500"><i class="fab fa-react fa-3x"></i><h4>React Native</h4></div>
+            <div class="col-md-3 col-sm-6 text-center" data-aos="zoom-in" data-aos-delay="600"><i class="fab fa-java fa-3x"></i><h4>Java</h4></div>
+            <div class="col-md-3 col-sm-6 text-center" data-aos="zoom-in" data-aos-delay="700"><i class="fab fa-angular fa-3x"></i><h4>Angular</h4></div>
+            <div class="col-md-3 col-sm-6 text-center" data-aos="zoom-in" data-aos-delay="800"><i class="fas fa-database fa-3x"></i><h4>MS SQL</h4></div>
+            <div class="col-md-3 col-sm-6 text-center" data-aos="zoom-in" data-aos-delay="900"><i class="fab fa-wordpress fa-3x"></i><h4>WordPress CMS</h4></div>
+            <div class="col-md-3 col-sm-6 text-center" data-aos="zoom-in" data-aos-delay="1000"><i class="fa fa-umbrella fa-3x"></i><h4>Umbraco CMS</h4></div>
         </div>
     </div>
 </section>
 
-
 <!-- Proficiency Section -->
-<section id="Proficiency" class="py-5" data-aos="flip-up">
+<section id="proficiency" class="py-5" data-aos="flip-up">
     <div class="container">
-        <div class="skills-bar">
-            <h1 class="skills-heading mb-2">Proficiency</h1>
-            <div class="skill mt-1">
-                <p class="Ski-name">Frontend/Design</p>
-                <div class="meter">
-                    <span style="width: 90%;"></span>
-                </div>
-                </div>
-                <div class="skill mt-2">
-                    <p class="Ski-name">Backend</p>
-                    <div class="meter">
-                        <span style="width: 70%;"></span>
-                    </div>
-                </div>
-                <div class="skill mt-2">
-                    <p class="Ski-name">Programming</p>
-                    <div class="meter">
-                        <span style="width: 80%;"></span>
-                    </div>
-                </div>
-            </div>
- 
+        <h1 class="text-center mb-4">Proficiency</h1>
+        <div class="skill" data-aos="fade-right"><p>Frontend/Design</p>
+            <div class="progress"><div class="progress-bar animate-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill" data-aos="fade-right" data-aos-delay="100"><p>Backend</p>
+            <div class="progress"><div class="progress-bar animate-fill" data-width="70"></div></div>
+        </div>
+        <div class="skill" data-aos="fade-right" data-aos-delay="200"><p>Programming</p>
+            <div class="progress"><div class="progress-bar animate-fill" data-width="80"></div></div>
+        </div>
     </div>
 </section>
 
-<!-- Company -->
+<!-- Company Experience -->
 <section id="experience" class="py-5 company-section" data-aos="fade-left">
     <div class="container">
-        <h1 class="section-heading mb-2">Work Experience</h1>
-        <div class="row">
-            <div class="col-md-2">
-                <img src="Company_logo.jpg" alt="Company Image" class="company-image">
-            </div>
-            <div class="col-md-8 ArHover">
+        <h1 class="text-center mb-4">Work Experience</h1>
+        <div class="row mb-4" data-aos="fade-up">
+            <div class="col-md-2"><img src="Company_logo.jpg" alt="Epic Minds IT" class="company-image"></div>
+            <div class="col-md-10 ArHover">
                 <h2>Epic Minds IT.</h2>
                 <p>Position: Software Developer (On Site)</p>
                 <p>Nov 2022 - Current</p>
@@ -232,12 +163,9 @@
                     </p>
             </div>
         </div>
-        <div class="row mt-4">
-            <div class="col-md-2">
-                <img src="Coolsoft.webp" alt="Company Image" class="company-image">
-            </div>
-            <div class="col-md-8 ArHover">
-                <h2>COOLSOFT LLC.</h2>
+        <div class="row" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-md-2"><img src="Coolsoft.webp" alt="COOLSOFT LLC" class="company-image"></div>
+            <div class="col-md-10 ArHover"><h2>COOLSOFT LLC.</h2>
                 <p>Position: CMS Developer (Remote)</p>
                 <p>Dec 2022 - Current</p>
                 <p>Location : Louisville</p>
@@ -247,16 +175,17 @@
         </div>
     </div>
 </section>
+
 <!-- Projects Section -->
 <section id="projects" class="py-5" data-aos="zoom-in">
     <div class="container">
-        <h1 class="Heading text-center">Projects</h1>
-        <div class="mt-4">
-            <div class="row mt-3 mb-3">
-                <div class="card">
+        <h1 class="text-center mb-5">Projects</h1>
+        <div class="row g-4">
+            <div class="col-md-6" data-aos="fade-up">
+                <div class="card h-100 shadow">
                     <div class="card-body Box-Shadow ASROne">
                         <h3 class="card-title">Supplier Diversity Management System (SDMS)</h3>
-                        <p class="card-text">
+                         <p class="card-text">
                             <ul>
                                 <li>
                                     Created and maintained a corporate website, ensuring ADA, WCAG 2.0 AA and WCAG 2.1 AA accessibility
@@ -274,9 +203,9 @@
                         </p>
                     </div>
                 </div>
-            </div>   
-            <div class="row mt-3 mb-3">
-                <div class="card">
+            </div>
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="card h-100 shadow">
                     <div class="card-body Box-Shadow ASRTwo">
                         <h3 class="card-title">Texas Education Agency (TEA)</h3>
                         <p class="card-text">
@@ -301,11 +230,11 @@ resulting 20% increase in user engagement.
                     </div>
                 </div>
             </div>
-            <div class="row mt-3 mb-3">
-                <div class="card">
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="card h-100 shadow">
                     <div class="card-body Box-Shadow ASRTwo">
                         <h3 class="card-title">Project Oversight (POS)</h3>
-                        <p class="card-text">
+                       <p class="card-text">
                             <ul>
                                 <li>
                                     Created an Expo mobile application using React Native, .NET Core, MS SQL Server, and Typescript.
@@ -329,8 +258,8 @@ resulting 20% increase in user engagement.
                     </div>
                 </div>
             </div>
-            <div class="row mt-3 mb-3">
-                <div class="card">
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="card h-100 shadow">
                     <div class="card-body Box-Shadow ASROne">
                         <h3 class="card-title">CoolWorks United States</h3>
                         <p class="card-text">
@@ -359,24 +288,20 @@ traffic.
     </div>
 </section>
 
-<!-- Study -->
+<!-- Education Section -->
 <section id="education" class="py-5 education-section" data-aos="fade-right">
     <div class="container">
-        <h1 class="Heading">Education</h1>
-        <div class="education-content">
-            <div class="education-item ArHover">
-                <div class="education-icon">
-                    <img src="PMEC_logo.jpg" alt="University Icon" width="75" height="75">
-                </div>
-                <h3 class="mt-2">Parala Maharaja Engineering College</h3>
+        <h1 class="text-center mb-5">Education</h1>
+        <div class="row">
+            <div class="col-md-6 mb-4 ArHover" data-aos="fade-up">
+                <img src="PMEC_logo.jpg" class="EDLogo mb-4" alt="Parala Maharaja Engineering College" width="75" height="75">
+                 <h3 class="mt-2">Parala Maharaja Engineering College</h3>
                 <p>Aug 2018- Oct 2021</p>
                 <p>Ranked top 10% in the branch. Took courses about Auto CAD And SAP</p>
                 <p>8.04 CGPA</p>
             </div>
-            <div class="education-item ArHover">
-                <div class="education-icon">
-                    <img src="DiplomaLogo.jpg" alt="University Icon" width="75" height="75">
-                </div>
+            <div class="col-md-6 ArHover" data-aos="fade-up" data-aos-delay="200">
+                <img src="DiplomaLogo.jpg" class="EDLogo mb-4" alt="Govt. Polytechnic Dhenkanal" width="75" height="75">
                 <h3 class="mt-2">Govt. Polytechnic Dhenkanal</h3>
                 <p>June 2014- Aug 2017</p>
                 <p>Participated in the research solar water purifier and published 3 papers.</p>
@@ -386,39 +311,38 @@ traffic.
     </div>
 </section>
 
-<!-- Contact -->
+<!-- Contact Section -->
 <section id="contact" class="py-5 contact-section" data-aos="zoom-out">
     <div class="container">
         <div class="contact-content">
             <div class="contact-text">
                 <h1>Reach Out to me!</h1>
-                <p class="ArHover" style="color: #868e96;">DISCUSS ON A PROJECT OR GET IN TOUCH! MY INBOX IS OPEN FOR YOU.</p>
-                <p class="ArHover"><i class="iconify" data-icon="bi:geo-alt-fill"></i> Bangalore, Karnataka</p>
+                <p class="ArHover">DISCUSS A PROJECT OR GET IN TOUCH! INBOX IS OPEN FOR YOU.</p>
+                <p class="ArHover"><i class="fas fa-map-marker-alt"></i> Bangalore, Karnataka</p>
                 <div class="social-media-div">
-                    <a href="https://github.com/anshumanray19" class="icon-button github" target="_blank" rel="noopener noreferrer" aria-describedby="new-window"> <i class="fab fa-github"></i><span></span></a>
-                    <a href="https://www.linkedin.com/in/anshuman-samantaray-851a74137/" class="icon-button linkedin" target="_blank" rel="noopener noreferrer" aria-describedby="new-window"><i class="fab fa-linkedin-in"></i><span></span></a>
-                    <a href="mailto:anshumansamantaray1@gmail.com" class="icon-button google" target="_blank" rel="noopener noreferrer" aria-describedby="new-window"><i class="fas fa-envelope"></i><span></span></a>
-                    <a href="https://www.facebook.com/anshumanray29/" class="icon-button facebook" target="_blank" rel="noopener noreferrer" aria-describedby="new-window"><i class="fab fa-facebook-f"></i><span></span></a>
-                    <a href="https://www.instagram.com/anshumanray_" class="icon-button instagram" target="_blank" rel="noopener noreferrer" aria-describedby="new-window"><i class="fab fa-instagram"></i><span></span></a>
-                    <a href="https://x.com/Anshumanray29" class="icon-button twitter" target="_blank" rel="noopener noreferrer" aria-describedby="new-window"><i class="fab fa-twitter"></i><span></span></a>
+                    <a href="https://github.com/anshumanray19" class="icon-button github hover-scale" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/anshuman-samantaray-851a74137/" class="icon-button linkedin hover-scale" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:anshumansamantaray1@gmail.com" class="icon-button google hover-scale" target="_blank"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.facebook.com/anshumanray29/" class="icon-button facebook hover-scale" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/anshumanray_" class="icon-button instagram hover-scale" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/Anshumanray29" class="icon-button twitter hover-scale" target="_blank"><i class="fab fa-x-twitter"></i></a>
                 </div>
-                <div id="new-window" style="display:none;">Opens in a new window</div>
             </div>
             <div class="contact-image">
-                <img src="Anshuman.jpeg" alt="Anshuman" class="rounded-image">
+                <img src="IMG_1581.JPG" alt="Anshuman" class="rounded-image">
             </div>
         </div>
     </div>
 </section>
 
-
 <!-- Footer -->
 <footer class="text-white text-center py-3">
     <div class="container">
-        <p class="FooterText">&copy; 2024 Anshuman Samantaray. All right reserved.</p>
+        <p class="FooterText">&copy; 2024 Anshuman Samantaray. All rights reserved.</p>
     </div>
 </footer>
-<!-- Scroll -->
+
+<!-- Scroll to Top Button -->
 <button id="scrollToTopBtn" title="Back to top">
     <img alt="Scroll Up" class="scrollUp" src="data:image/png;base64,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">
 </button>
