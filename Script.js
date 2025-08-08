@@ -28,6 +28,17 @@ $(document).ready(function() {
     });
 });
 
+//Nav
+
+document.addEventListener('scroll', function () {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
+
 // Generate raindrops (optimized: fewer on mobile)
 // function generateRaindrops() {
 //     const header = document.querySelector('header');
@@ -184,3 +195,28 @@ window.addEventListener('scroll', function() {
       cursorCircle.style.borderColor = '#153d5c';
     });
   });
+
+
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const progressBars = document.querySelectorAll('.progress-bar');
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    const bar = entry.target;
+                    const width = bar.getAttribute('data-width');
+                    bar.style.width = `${width}%`;
+                    bar.classList.add('filled');
+                    observer.unobserve(bar);
+                }
+            });
+        },
+        { threshold: 0.5 }
+    );
+
+    progressBars.forEach((bar) => {
+        observer.observe(bar);
+    });
+});

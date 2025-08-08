@@ -69,10 +69,11 @@ video {
     height: 100%;
     background: rgba(0, 0, 0, 0.3); 
 }
-.ArType{
+.ArType, .ArType:hover{
     position: relative;
     z-index: 999;
 }
+
 .ASRHi {
     display: inline-block;
     animation: wave 1.8s infinite;
@@ -105,12 +106,15 @@ section {
     margin-bottom: 10px;
     margin-top: 15px;
 }
+header{
+    height: 75vh;
+}
 footer {
     position: relative;
     bottom: 0;
     width: 100%;
     color: #fff;
-    background: linear-gradient(135deg, #27282c, #5e463d, #131313);
+    background: linear-gradient(135deg, #27282c, #5e463d7e, #131313ba);
     background-size: 400% 400%;
     transition: background 0.3s ease-in-out; 
     animation: footer-gradient-animation 5s ease infinite; 
@@ -129,27 +133,34 @@ footer {
 }
 
 nav {
-    background: linear-gradient(135deg, #131313, #5e463d, #27282c );
+    background: transparent;
     width: 100%;
-    transition: background 0.3s ease-in-out; 
-    background-size: 400% 400%; 
-    animation: gradient-animation 5s ease infinite; 
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-    right: 0; 
+    transition: all 0.5s ease-in-out;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 1000;
+    backdrop-filter: blur(8px);
+    box-shadow: none;
+}
+
+nav.scrolled {
+   background: linear-gradient(135deg, #27282c, #5e463d7e, #131313ba);
+    background-size: 400% 400%;
+    animation: gradient-animation 8s ease infinite;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 @keyframes gradient-animation {
     0% {
-        background-position: 0% 50%; 
+        background-position: 0% 50%;
     }
     50% {
-        background-position: 100% 50%; 
+        background-position: 100% 50%;
     }
     100% {
-        background-position: 0% 50%; 
+        background-position: 0% 50%;
     }
 }
 
@@ -158,22 +169,123 @@ nav {
     overflow: hidden;
     white-space: nowrap;
     animation: typing 6s steps(500, end), blink-caret .6s step-end;
+    position: relative;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
+
+.NavText::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #f9f8f6;
+    transition: width 0.3s ease-in-out;
+}
+
+.NavText:hover::after {
+    width: 100%;
+}
+
+
 @keyframes typing {
     from {
         width: 0;
     }
     to {
-        width: 50%;
+        width: 100%;
     }
 }
-.navbar-nav a{
-    font-size: 18px;
-    margin-top: 10px;
-} 
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #f9f8f6;
+    }
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav .nav-item {
+    position: relative;
+    margin: 0 15px;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    color: #b9bcc1 !important;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #f9f8f6;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::before {
+    width: 100%;
+}
+
+.nav-link:hover {
+    color: #f9f8f6 !important;
+    transform: translateY(-2px);
+}
+
+.theme-toggle-button {
+    background: none;
+    border: none;
+    /* padding: 8px; */
+    transition: transform 0.3s ease;
+}
+
+.theme-toggle-button:hover {
+    transform: scale(1.2);
+}
+
+.theme-toggle-button .iconify {
+    font-size: 1.5rem;
+    color: #b9bcc1;
+}
+
+.theme-toggle-button:hover .iconify {
+    color: #f9f8f6;
+}
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        padding: 1rem;
+        background: rgba(26, 26, 26, 0.95);
+        border-radius: 8px;
+        margin-top: 10px;
+    }
+    .nav-item {
+        margin: 10px 0;
+    }
+    .nav-link {
+        font-size: 1.2rem;
+    }
+}
 .nav-link, .FooterText, .NavText{
     color:#b9bcc1 !important;
     cursor: pointer;
+    font-family:math;
 }
 .nav-link:hover,.FooterText:hover, .NavText:hover{
     color: #f9f8f6 !important;
@@ -302,11 +414,11 @@ nav {
 }
 
 
-.skill:hover p{
+/* .skill:hover p{
     background: linear-gradient(180deg, #7d1aff, #eb0239);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
+} */
 .card:hover .card-body::after {
     content: ''; 
     position: absolute; 
@@ -333,7 +445,7 @@ nav {
     }
 }
 
-.skills-heading {
+/* .skills-heading {
     font-size: 56px;
     font-weight: 400;
 }
@@ -341,8 +453,8 @@ nav {
     font-size: 20px;
     font-weight: 700;
     margin-top: 20px;
-}
-.meter {
+} */
+/* .meter {
     background: #f3efef;
     border-radius: 25px;
     height: 20px;
@@ -361,7 +473,125 @@ nav {
 }
 .meter:hover span{
     background: linear-gradient(120deg, red,yellow, #33ff00 );
+} */
+
+.ARheading {
+    font-size: 2.5rem;
+    font-weight: 600;
+    background: linear-gradient(45deg, #ad81717e, #984020);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
 }
+
+.ARheading:hover {
+    transform: scale(1.05);
+}
+
+.skill {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    color: #b9bcc1;
+    transition: transform 0.3s ease;
+}
+
+.skill:hover {
+    transform: translateX(10px);
+}
+
+.skill p {
+    margin-bottom: 0.5rem;
+    background: linear-gradient(180deg, #7d1aff, #eb0239);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.skill:hover p {
+    text-shadow: 0 0 10px rgba(125, 26, 255, 0.5);
+}
+
+.progress {
+    height: 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #ff1a25, #15a000);
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+    transition: width 1.5s ease-in-out;
+    width: 0;
+}
+
+.progress-bar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0.2) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255, 255, 255, 0.2) 50%,
+        rgba(255, 255, 255, 0.2) 75%,
+        transparent 75%,
+        transparent
+    );
+    background-size: 30px 30px;
+    animation: move-stripes 2s linear infinite;
+}
+
+@keyframes move-stripes {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 30px 0;
+    }
+}
+
+.progress-label {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.progress-bar.filled .progress-label {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .skills-heading {
+        font-size: 2.5rem;
+    }
+    .skill {
+        font-size: 1.1rem;
+    }
+    .progress {
+        height: 1.2rem;
+    }
+}
+
+
+
 .education-item {
     /* display: flex; */
     align-items: center;
@@ -626,10 +856,10 @@ nav {
     background: none;
     border: none;
     cursor: pointer;
-    padding: 5px;
+    /* padding: 5px; */
     width: 32px; 
     border: none !important;
-    margin-top: 18px;
+    margin-top: -10px;
 }
 .btn:focus {
     outline: none!important;
