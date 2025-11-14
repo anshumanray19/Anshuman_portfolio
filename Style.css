@@ -132,6 +132,7 @@ nav.scrolled {
     background: none; border: none;
     transition: transform 0.3s ease;
     position: relative; width: 32px;
+    margin-top: -10px;
 }
 .theme-toggle-button:hover { transform: scale(1.2); }
 .theme-toggle-button .iconify { font-size: 1.5rem; color: #b9bcc1; }
