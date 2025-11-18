@@ -4,22 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Anshuman Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="AnshICon.jpg" />
+    <link rel="icon" type="image/x-icon" href="AnshICon.jpg">
     <meta name="apple-mobile-web-app-title" content="yes">
     <link rel="apple-touch-icon" href="AnshICon.jpg">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
     <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    
     <!-- AOS and Animate.css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Iconify -->
@@ -28,7 +25,6 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="Style.css">
     <script src="Script.js" defer></script>
     <link rel="manifest" href="manifest.json">
@@ -199,117 +195,104 @@
     </div>
 </section>
 
-<!-- Projects Section -->
-<section id="projects" class="py-5" data-aos="zoom-in">
-    <div class="container">
-        <h1 class="text-center mb-5 ARheading">Projects</h1>
-        <div class="row g-4">
-            <div class="col-md-6" data-aos="fade-up">
-                <div class="card h-100 shadow">
-                    <div class="card-body Box-Shadow ASROne">
-                        <h3 class="card-title">Supplier Diversity Management System (SDMS)</h3>
-                         <p class="card-text">
-                            <ul>
-                                <li>
-                                    Created and maintained a corporate website, ensuring ADA, WCAG 2.0 AA and WCAG 2.1 AA accessibility
-                                    standards compliance using .Net Core, csharp, HTML5, CSS3, jQuery, bootstrap and MS SQL.
-                                </li>
-                                <li>
-                                    Integrated two-factor authentication (2FA) protocols in collaboration with the development team to enhance
-                                    security and meet stringent client requirements.
-                                </li>
-                                <li>
-                                    Implemented front-end enhancements and optimizations to improve user experience and accessibility for color blind users.
-                                  <br/>  <a href="http://sdms.coolsofttech.com/" target="_blank" rel="noopener noreferrer" title="SDMS (Opens in a new window)">Try It Here.</a>
-                                </li>
-                            </ul>
-                        </p>
+<!-- Projects Section - Updated with Compact Scrolling Marquee -->
+ <section id="projects" class="py-5" data-aos="zoom-in">
+        <div class="container">
+            <h1 class="text-center mb-5 ARheading">Projects</h1>
+            <div class="projects-marquee">
+                <div class="projects-track">
+                    <!-- New Project: Avo Max Argo -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="0">
+                        <div class="card h-100 shadow project-glow">
+                            <div class="card-body Box-Shadow ASRNew">
+                                <h3 class="card-title">Avo Max Argo (E-Commerce Platform)</h3>
+                               
+                                    <ul class="card-text">
+                                        <li>Architected a cross-platform multi-vendor marketplace using React.js and React Native, backed by .NET Core 8.0 and SQL Server for 4 distinct user roles.</li>
+                                        <li>Optimized frontend data binding and state management, ensuring UI consistency across Android, iOS, and Web platforms.</li>
+                                        <li>Configured deployment infrastructure for Development and UAT environments on AWS EC2, ensuring continuous availability for QA testing.</li>
+                                        <li>Engineered a hybrid authentication system using OTP-based validation for mobile and encryption for web, closing security vulnerabilities.</li>
+                                    </ul>
+                                
+                                <a href="http://13.200.17.76:8002/" target="_blank" rel="noopener noreferrer" class="try-it-btn" title="Avo Max Argo Opens in a new window">Try It Here</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <div class="card h-100 shadow">
-                    <div class="card-body Box-Shadow ASRTwo">
-                        <h3 class="card-title">Texas Education Agency (TEA)</h3>
-                        <p class="card-text">
-                            <ul>
-                                <li>
-                                    Provided support for a robust online web application using .NET MVC, Csharp, HTML, CSS, Bootstrap, MS
-SQL Server, Umbraco (CMS), jQuery, and JavaScript.
-                                </li>
-                                <li>
-                                    Executed server-side logic and data processing, including user authentication, authorization, and session management, ensuring optimal functionality.
-                                </li>
-                                <li>
-                                    Conducted regular performance tuning and optimization to maintain application efficiency and responsiveness
-resulting 20% increase in user engagement.
-                                </li>
-                                <li>
-                                    Utilized a modular architecture, allowing for easier scalability and future feature additions.
-                                 <br/> <a href="https://www.txel.org/" target="_blank"  rel="noopener noreferrer" title="txel (Opens in a new window)">Try It Here.</a>
-                                </li>
-                            </ul>
-                        </p>
+                    <!-- Existing Project 1: SDMS -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card h-100 shadow project-glow">
+                            <div class="card-body Box-Shadow ASROne">
+                                <h3 class="card-title">Supplier Diversity Management System (SDMS)</h3>
+                               
+                                    <ul class="card-text">
+                                        <li>Created and maintained a corporate website, ensuring ADA, WCAG 2.0 AA and WCAG 2.1 AA accessibility standards compliance using .Net Core, c#, HTML5, CSS3, jQuery, bootstrap and MS SQL.</li>
+                                        <li>Integrated two-factor authentication (2FA) protocols in collaboration with the development team to enhance security and meet stringent client requirements.</li>
+                                        <li>Implemented front-end enhancements and optimizations to improve user experience and accessibility for color blind users.</li>
+                                    </ul>
+                            
+                                <a href="https://dms.coolsofttech.com" target="_blank" rel="noopener noreferrer" class="try-it-btn" title="SDMS Opens in a new window">Try It Here</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                <div class="card h-100 shadow">
-                    <div class="card-body Box-Shadow ASRTwo">
-                        <h3 class="card-title">Project Oversight (POS)</h3>
-                       <p class="card-text">
-                            <ul>
-                                <li>
-                                    Created an Expo mobile application using React Native, .NET Core, MS SQL Server, and Typescript.
-                                </li>
-                                <li>
-                                    Enabled detailed evaluation of projects and employees, provided clear insights into project status, monitored employee contributions, tracked project progress with dashboards, generated weekly status reports, and optimized
-                                    resource utilization.
-                                </li>
-                                <li>
-                                    Improved user experience by adding features for daily task entries and employee record keeping.
-                                </li>
-                                <li>
-                                    Integrated push notifications to keep users informed of project updates and deadlines.
-                                </li>
-                                <li>
-                                    Conducted usability testing to gather feedback and improve 60% performance growth in application design and functionality. 
-                                   <br/> <a href="http://pos.coolsofttech.com:9002/" target="_blank" rel="noopener noreferrer" title="coolsoft-tech (Opens in a new window)">Try It Here.</a>
-                                </li>
-                            </ul>
-                        </p>
+                    <!-- Existing Project 2: TEA -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card h-100 shadow project-glow">
+                            <div class="card-body Box-Shadow ASRTwo">
+                                <h3 class="card-title">Texas Education Agency (TEA)</h3>
+                               
+                                    <ul class="card-text">
+                                        <li>Provided support for a robust online web application using .NET MVC, C#, HTML, CSS, Bootstrap, MS SQL Server, Umbraco CMS, jQuery, and JavaScript.</li>
+                                        <li>Executed server-side logic and data processing, including user authentication, authorization, and session management, ensuring optimal functionality.</li>
+                                        <li>Conducted regular performance tuning and optimization to maintain application efficiency and responsiveness resulting 20% increase in user engagement.</li>
+                                        <li>Utilized a modular architecture, allowing for easier scalability and future feature additions.</li>
+                                    </ul>
+                                
+                                <a href="https://www.txel.org" target="_blank" rel="noopener noreferrer" class="try-it-btn" title="txel Opens in a new window">Try It Here</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <div class="card h-100 shadow">
-                    <div class="card-body Box-Shadow ASROne">
-                        <h3 class="card-title">CoolWorks United States</h3>
-                        <p class="card-text">
-                            <ul>
-                                <li>
-                                    Maintained a recruitment web application using .NET Web Forms, Csharp, HTML, CSS, MS SQL Server,
-jQuery, and JavaScript.
-                                </li>
-                                <li>
-                                    Applied performance optimizations, enhancing scalability and responsiveness, resulting in 35% increase in user
-traffic.
-                                </li>
-                                <li>
-                                    Introduced caching mechanisms to lighten server load and improve page load times.
-                                </li>
-                                <li>
-                                    Enhanced security by implementing best practices for data protection and secure coding standards. 
-                                    <br/>  <a href="https://cw.coolsoft-tech.com/vms/Login.aspx?ReturnUrl=%2fvms%2fDefault.aspx" target="_blank" rel="noopener noreferrer" title="Coolworks (Opens in a new window)">Try It Here.</a>
-                                </li>
-                            </ul>
-                        </p>
+                    <!-- Existing Project 3: POS -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card h-100 shadow project-glow">
+                            <div class="card-body Box-Shadow ASRTwo">
+                                <h3 class="card-title">Project Oversight (POS)</h3>
+                                
+                                    <ul class="card-text">
+                                        <li>Created an Expo mobile application using React Native, .NET Core, MS SQL Server, and Typescript.</li>
+                                        <li>Enabled detailed evaluation of projects and employees, provided clear insights into project status, monitored employee contributions, tracked project progress with dashboards, generated weekly status reports, and optimized resource utilization.</li>
+                                        <li>Improved user experience by adding features for daily task entries and employee record keeping.</li>
+                                        <li>Integrated push notifications to keep users informed of project updates and deadlines.</li>
+                                        <li>Conducted usability testing to gather feedback and improve 60% performance growth in application design and functionality.</li>
+                                    </ul>
+                                
+                                <a href="http://pos.coolsofttech.com:9002" target="_blank" rel="noopener noreferrer" class="try-it-btn" title="coolsoft-tech Opens in a new window">Try It Here</a>
+                            </div>
+                        </div>
                     </div>
+                    <!-- Existing Project 4: CoolWorks -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="card h-100 shadow project-glow">
+                            <div class="card-body Box-Shadow ASROne">
+                                <h3 class="card-title">CoolWorks United States</h3>
+                                
+                                    <ul class="card-text">
+                                        <li>Maintained a recruitment web application using .NET Web Forms, C#, HTML, CSS, MS SQL Server, jQuery, and JavaScript.</li>
+                                        <li>Applied performance optimizations, enhancing scalability and responsiveness, resulting in 35% increase in user traffic.</li>
+                                        <li>Introduced caching mechanisms to lighten server load and improve page load times.</li>
+                                        <li>Enhanced security by implementing best practices for data protection and secure coding standards.</li>
+                                    </ul>
+                               
+                                <a href="https://cw.coolsoft-tech.com/vms/Login.aspx?ReturnUrl=%2fvms%2fDefault.aspx" target="_blank" rel="noopener noreferrer" class="try-it-btn" title="Coolworks Opens in a new window">Try It Here</a>
+                            </div>
+                        </div>
+                    </div>
+                   
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+
 
 <!-- Education Section -->
 <section id="education" class="py-5 education-section" data-aos="fade-right">

@@ -508,39 +508,251 @@ nav.scrolled {
 .twitter i { background: linear-gradient(135deg, #36383a, #0a0a0a, #e2b46a); }
 .icon-button:hover i { background: #000; }
 
-/* ============ Cards ============ */
-.card { border: none; border-radius: 15px; width: 100%; }
-.card-body { position: relative; overflow: hidden; }
-.light-theme .card-body {
-    border-radius: 15px;
-    background: linear-gradient(to top right, #fff89d 0%, #f4f2ee 100%);
-    background-size: 400% 400%;
-    animation: card-gradient-animation 5s ease infinite;
-}
-@keyframes card-gradient-animation {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-.card-body:hover {
-    content: '';
-    background: linear-gradient(135deg, #dd63ff, #0c1c3b, #3732bd);
-    z-index: 1; color: #fff !important; border-radius: 15px;
-}
-.card-body:hover a { color: rgb(248, 220, 8); }
-.card:hover .card-body { animation: pulse 1.5s infinite; transition: transform 0.3s ease-in-out; }
-@keyframes pulse {
-    0% { transform: scale(1); box-shadow: 0 10px 30px -15px #0003; }
-    50% { transform: scale(1.05); box-shadow: 0 15px 40px -10px #0003; }
-    100% { transform: scale(1); box-shadow: 0 10px 30px -15px #0003; }
-}
+/* Updated Projects Marquee Styles - Compact Cards */
+ :root {
+            --primary: #dd63ff;
+            --secondary: #7d1aff;
+            --accent: #eb0239;
+            --dark: #0c1c3b;
+            --light: #f8f9fa;
+        }
+ .ARheading {
+            font-weight: 700;
+            color: var(--dark);
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .projects-marquee {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            background: linear-gradient(135deg, rgba(221, 99, 255, 0.05), rgba(12, 28, 59, 0.05));
+            border-radius: 15px;
+            padding: 20px 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .projects-track {
+            display: flex;
+            animation: marquee-scroll 35s linear infinite;
+            gap: 1.5rem;
+            width: max-content;
+            padding: 0 2rem;
+        }
+
+        .projects-track:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes marquee-scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .project-card {
+            flex: 0 0 520px;
+            transition: transform 0.3s ease;
+            max-width: 520px;
+            position: relative;
+        }
+
+        .project-glow {
+            transition: all 0.4s ease;
+            box-shadow: 0 4px 20px rgba(221, 99, 255, 0.15);
+            border-radius: 12px;
+            border: none;
+            height: 100%;
+            background: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-glow:hover {
+            transform: translateY(-8px) scale(1.01);
+            box-shadow: 0 20px 40px rgba(221, 99, 255, 0.3), 0 0 25px rgba(221, 99, 255, 0.2);
+            animation: glow-pulse 1.8s ease-in-out infinite alternate;
+        }
+
+        /* Gradient background on hover */
+        .project-glow:hover::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(221, 99, 255, 0.24), rgba(125, 26, 255, 0.344), rgba(235, 2, 56, 0.3));
+            z-index: 0;
+            border-radius: 12px;
+        }
+        .dark-theme .card-body:hover {
+            background: linear-gradient(135deg, #dd63ff, #0c1c3b, #3732bd) !important;
+            color: #fff;
+        }
+
+        @keyframes glow-pulse {
+            from {
+                box-shadow: 0 20px 40px rgba(221, 99, 255, 0.3), 0 0 25px rgba(221, 99, 255, 0.2);
+            }
+            to {
+                box-shadow: 0 25px 50px rgba(221, 99, 255, 0.5), 0 0 35px rgba(221, 99, 255, 0.3);
+            }
+        }
+
+        /* Subtle particle effects for attractiveness */
+        .projects-marquee::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(1px 1px at 20px 30px, #dd63ff33, transparent),
+                radial-gradient(1px 1px at 40px 70px, rgba(235, 2, 57, 0.4), transparent),
+                radial-gradient(0.5px 0.5px at 90px 40px, #7d1aff66, transparent);
+            background-repeat: repeat;
+            background-size: 120px 120px;
+            animation: particles-float 25s linear infinite;
+            opacity: 0.2;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        @keyframes particles-float {
+            from {
+                transform: translateY(0px) rotate(0deg);
+            }
+            to {
+                transform: translateY(-120px) rotate(360deg);
+            }
+        }
+
+        /* Ensure card content fits compact width */
+        .project-card .card-body {
+            padding: 1.25rem;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            z-index: 1;
+        }
+
+        .project-card .card-title {
+            font-size: 1.4rem;
+            margin-bottom: 0.75rem;
+            color: var(--dark);
+            font-weight: 600;
+        }
+
+        .project-card ul {
+            font-size: 0.9rem;
+            line-height: 1.4;
+            padding-left: 1rem;
+            margin-bottom: 2.5rem; /* Space for the button */
+        }
+
+        .project-card li {
+            margin-bottom: 0.5rem;
+            color: #444;
+        }
+
+        /* Try It Button Styles */
+        .try-it-btn {
+            position: absolute;
+            bottom: 1.25rem;
+            right: 1.25rem;
+            padding: 0.5rem 1.25rem;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(125, 26, 255, 0.3);
+            transition: all 0.3s ease;
+            display: inline-block;
+            text-align: center;
+            z-index: 2;
+        }
+
+        .try-it-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(125, 26, 255, 0.4);
+            color: white;
+            background: linear-gradient(135deg, var(--secondary), var(--accent));
+        }
+
+        .try-it-btn:active {
+            transform: translateY(0);
+        }
+
+        /* Card color variations */
+        .Box-Shadow.ASRNew {
+            border-top: 4px solid var(--primary);
+        }
+        
+        .Box-Shadow.ASROne {
+            border-top: 4px solid var(--secondary);
+        }
+        
+        .Box-Shadow.ASRTwo {
+            border-top: 4px solid var(--accent);
+        }
+        
+          .Box-Shadow.ASRTwo:hover, .ASROne:hover, .ASRNew:hover {
+            border-top: 5px solid #facc15;
+        }
+        
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .project-card {
+                flex: 0 0 280px;
+                max-width: 280px;
+            }
+            .projects-track {
+                gap: 1rem;
+                animation-duration: 45s;
+            }
+            .project-card .card-body {
+                padding: 1rem;
+            }
+            .project-card .card-title {
+                font-size: 1.1rem;
+            }
+            .project-card ul {
+                font-size: 0.85rem;
+            }
+            .try-it-btn {
+                padding: 0.4rem 1rem;
+                font-size: 0.8rem;
+                bottom: 1rem;
+                right: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .project-card {
+                flex: 0 0 250px;
+                max-width: 250px;
+            }
+            .projects-track {
+                padding: 0 1rem;
+            }
+        }
 
 /* ============ Theme styles ============ */
 .light-theme { background-color: #eee8dc; color: #5e463d; }
 .light-theme header, .light-theme section, .light-theme footer { color: #5e463d; background-color: #fff; }
 .dark-theme { background-color: #31302d; color: #b9bcc1; }
-.dark-theme header, .dark-theme section, .dark-theme footer, .dark-theme .card-body {
-    color: #b9bcc1; background-color: #0f0f0f !important;
+.dark-theme header, .dark-theme section, .dark-theme footer, .dark-theme {
+    color: #b9bcc1; background-color: #0f0f0f;
 }
 h1:hover{
     background: linear-gradient(120deg, #7d1aff, #e048fa, #eb0239);
@@ -553,6 +765,18 @@ h1:hover{
     background: linear-gradient(120deg, #7d1aff, #e048fa, #eb0239);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+.light-theme .try-it-btn{
+    color:#000;
+}
+.dark-theme .card-text li {
+    color:#fff !important; 
+}
+.dark-theme .card-title{
+    color:#fff ; 
+}
+.dark-theme .card-body{
+     background-color: #0f0f0f;
 }
 
 /* ============ Responsive tweaks ============ */
