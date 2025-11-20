@@ -17,17 +17,64 @@ window.addEventListener('load', function() {
 
 // Smooth scrolling
 $(document).ready(function() {
-    $('a.smooth-scroll').on('click', function(event) {
-        if (this.hash !== "") {
-            event.preventDefault();
-            const hash = this.hash;
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 800, function() {
-                window.location.hash = hash;
-            });
+    const scrollBtn = $('#scrollToTopBtn');
+
+    // Show/hide button based on scroll position
+    $(window).on('scroll', function() {
+        if ($(this).scrollTop() > 300) {
+            scrollBtn.addClass('show').css('display', 'flex');
+        } else {
+            scrollBtn.removeClass('show');
+            // Hide after fade out animation completes
+            setTimeout(() => {
+                if (!scrollBtn.hasClass('show')) {
+                    scrollBtn.css('display', 'none');
+                }
+            }, 250);
         }
+
+        // Update progress ring
+        updateProgressRing();
     });
+
+    // Scroll to top when clicked (instant start, no delay)
+    scrollBtn.on('click', function(e) {
+        e.preventDefault();
+
+        // Temporarily disable native smooth scroll to avoid conflicts
+        const htmlEl = document.documentElement;
+        const prevScrollBehavior = htmlEl.style.scrollBehavior;
+        htmlEl.style.scrollBehavior = 'auto';
+
+        // Stop any queued animations, then animate immediately
+        $('html, body').stop(true).animate({ scrollTop: 0 }, 800, function() {
+            // Restore previous scroll behavior
+            htmlEl.style.scrollBehavior = prevScrollBehavior;
+        });
+
+        return false;
+    });
+
+    // Progress ring animation
+    function updateProgressRing() {
+        const winHeight = $(window).height();
+        const docHeight = $(document).height();
+        const scrollTop = $(window).scrollTop();
+        const scrollPercent = (scrollTop / (docHeight - winHeight)) * 100;
+        const circumference = 2 * Math.PI * 22; // 2πr where r=22
+
+        const offset = circumference - (scrollPercent / 100) * circumference;
+        $('.progress-ring__circle').css('stroke-dasharray', circumference + ' ' + circumference);
+        $('.progress-ring__circle').css('stroke-dashoffset', offset);
+    }
+
+    // Initialize progress ring
+    const circumference = 2 * Math.PI * 22;
+    $('.progress-ring__circle').css('stroke-dasharray', circumference + ' ' + circumference);
+    $('.progress-ring__circle').css('stroke-dashoffset', circumference);
+
+    // Ensure ring is correct on first render
+    updateProgressRing();
 });
 
 // Premium Scroll-to-Top with progress ring

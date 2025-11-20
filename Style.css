@@ -389,7 +389,24 @@ nav.scrolled {
 .contact-content { display: flex; justify-content: space-between; align-items: center; width: 100%; max-width: 1200px; margin: 0 auto; }
 .contact-text { width: 70%; padding-right: 30px; }
 .contact-text p i { margin-right: 10px; font-size: 24px; }
-.contact-image { width: 30%; text-align: center; }
+.contact-image {
+    width: 30%;
+    text-align: center;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    transform-style: preserve-3d;
+}
+
+.contact-image:hover {
+    transform: scale(1.05) perspective(1000px) rotateY(5deg) rotateX(5deg);
+    
+}
+.rounded-image {
+    border-radius: 15px;
+    transition: inherit; /* Inherit transition from parent */
+    width: 100%;
+    height: auto;
+    display: block;
+}
 .rounded-image { width: 250px; height: 100%; border-radius: 25%; border: 5px solid #fff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
 
 /* ============ Company ============ */
@@ -684,7 +701,6 @@ nav.scrolled {
         .try-it-btn:hover {
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(125, 26, 255, 0.4);
-            color: white;
             background: linear-gradient(135deg, var(--secondary), var(--accent));
         }
 
@@ -765,9 +781,6 @@ h1:hover{
     background: linear-gradient(120deg, #7d1aff, #e048fa, #eb0239);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-.light-theme .try-it-btn{
-    color:#000;
 }
 .dark-theme .card-text li {
     color:#fff !important; 
