@@ -288,36 +288,108 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Marquee Enhancement - Pause on hover and responsive speed
-document.addEventListener('DOMContentLoaded', function() {
-    const marquee = document.querySelector('.projects-track');
-    if (marquee) {
-        const baseDuration = 35; // Base scroll speed in seconds
-        let animationDuration = baseDuration;
+// Projects marquee: infinite auto-scroll + hover pause + drag
+document.addEventListener('DOMContentLoaded', function () {
+    const marqueeContainer = document.querySelector('.projects-marquee');
+    const track = document.querySelector('.projects-track');
+    if (!marqueeContainer || !track) return;
 
-        // Pause on hover
-        marquee.addEventListener('mouseenter', () => {
-            marquee.style.animationPlayState = 'paused';
-        });
+    // 1. Duplicate cards for seamless loop
+    //    (track will contain [cards][cards])
+    track.innerHTML += track.innerHTML;
 
-        marquee.addEventListener('mouseleave', () => {
-            marquee.style.animationPlayState = 'running';
-        });
+    let autoScroll = true;
+    let scrollSpeed = 0.5; // px per frame
+    let isDragging = false;
+    let startX = 0;
+    let startScrollLeft = 0;
 
-        // Adjust speed based on screen size
-        function adjustSpeed() {
-            const width = window.innerWidth;
-            if (width < 768) {
-                animationDuration = 45; // Slower on tablet/mobile
-            } else if (width < 480) {
-                animationDuration = 50; // Even slower on small mobile
-            } else {
-                animationDuration = baseDuration;
+    const getHalfWidth = () => track.scrollWidth / 2;
+
+    // 2. Auto-scroll using requestAnimationFrame
+    function animate() {
+        if (autoScroll && !isDragging) {
+            marqueeContainer.scrollLeft += scrollSpeed;
+
+            const half = getHalfWidth();
+            // If we’ve scrolled through first set, jump back by half
+            if (marqueeContainer.scrollLeft >= half) {
+                marqueeContainer.scrollLeft -= half;
             }
-            marquee.style.animationDuration = animationDuration + 's';
         }
-
-        adjustSpeed();
-        window.addEventListener('resize', adjustSpeed);
+        requestAnimationFrame(animate);
     }
+    requestAnimationFrame(animate);
+
+    // 3. Pause on hover, resume on leave
+    marqueeContainer.addEventListener('mouseenter', () => {
+        autoScroll = false;
+    });
+
+    marqueeContainer.addEventListener('mouseleave', () => {
+        autoScroll = true;
+    });
+
+    // 4. Mouse drag support
+    marqueeContainer.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        marqueeContainer.classList.add('dragging');
+        startX = e.pageX - marqueeContainer.offsetLeft;
+        startScrollLeft = marqueeContainer.scrollLeft;
+        autoScroll = false;
+    });
+
+    window.addEventListener('mouseup', () => {
+        if (!isDragging) return;
+        isDragging = false;
+        marqueeContainer.classList.remove('dragging');
+        autoScroll = true;
+    });
+
+    marqueeContainer.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+        e.preventDefault();
+        const x = e.pageX - marqueeContainer.offsetLeft;
+        const walk = x - startX;
+        marqueeContainer.scrollLeft = startScrollLeft - walk;
+
+        const half = getHalfWidth();
+        if (marqueeContainer.scrollLeft < 0) {
+            marqueeContainer.scrollLeft += half;
+        } else if (marqueeContainer.scrollLeft >= half) {
+            marqueeContainer.scrollLeft -= half;
+        }
+    });
+
+    // 5. Touch drag support (mobile)
+    marqueeContainer.addEventListener('touchstart', (e) => {
+        const touch = e.touches[0];
+        isDragging = true;
+        marqueeContainer.classList.add('dragging');
+        startX = touch.pageX - marqueeContainer.offsetLeft;
+        startScrollLeft = marqueeContainer.scrollLeft;
+        autoScroll = false;
+    }, { passive: true });
+
+    window.addEventListener('touchend', () => {
+        if (!isDragging) return;
+        isDragging = false;
+        marqueeContainer.classList.remove('dragging');
+        autoScroll = true;
+    });
+
+    marqueeContainer.addEventListener('touchmove', (e) => {
+        if (!isDragging) return;
+        const touch = e.touches[0];
+        const x = touch.pageX - marqueeContainer.offsetLeft;
+        const walk = x - startX;
+        marqueeContainer.scrollLeft = startScrollLeft - walk;
+
+        const half = getHalfWidth();
+        if (marqueeContainer.scrollLeft < 0) {
+            marqueeContainer.scrollLeft += half;
+        } else if (marqueeContainer.scrollLeft >= half) {
+            marqueeContainer.scrollLeft -= half;
+        }
+    }, { passive: false });
 });

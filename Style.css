@@ -525,243 +525,221 @@ nav.scrolled {
 .twitter i { background: linear-gradient(135deg, #36383a, #0a0a0a, #e2b46a); }
 .icon-button:hover i { background: #000; }
 
-/* Updated Projects Marquee Styles - Compact Cards */
- :root {
-            --primary: #dd63ff;
-            --secondary: #7d1aff;
-            --accent: #eb0239;
-            --dark: #0c1c3b;
-            --light: #f8f9fa;
-        }
- .ARheading {
-            font-weight: 700;
-            color: var(--dark);
-            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        
-        .projects-marquee {
-            overflow: hidden;
-            position: relative;
-            width: 100%;
-            background: linear-gradient(135deg, rgba(221, 99, 255, 0.05), rgba(12, 28, 59, 0.05));
-            border-radius: 15px;
-            padding: 20px 0;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        }
+:root {
+    --primary: #dd63ff;
+    --secondary: #7d1aff;
+    --accent: #eb0239;
+    --dark: #0c1c3b;
+    --light: #f8f9fa;
+}
 
-        .projects-track {
-            display: flex;
-            animation: marquee-scroll 35s linear infinite;
-            gap: 1.5rem;
-            width: max-content;
-            padding: 0 2rem;
-        }
+.ARheading {
+    font-weight: 700;
+    color: var(--dark);
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
 
-        .projects-track:hover {
-            animation-play-state: paused;
-        }
+/* Outer container */
+.projects-marquee {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background: linear-gradient(135deg, rgba(221, 99, 255, 0.05), rgba(12, 28, 59, 0.05));
+    border-radius: 15px;
+    padding: 20px 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    cursor: grab;
+}
 
-        @keyframes marquee-scroll {
-            0% {
-                transform: translateX(0);
-            }
-            100% {
-                transform: translateX(-50%);
-            }
-        }
+.projects-marquee.dragging {
+    cursor: grabbing;
+}
 
-        .project-card {
-            flex: 0 0 520px;
-            transition: transform 0.3s ease;
-            max-width: 520px;
-            position: relative;
-        }
+/* Track of cards (NO CSS animation now) */
+.projects-track {
+    display: flex;
+    gap: 1.5rem;
+    width: max-content;
+    padding: 0 2rem;
+    user-select: none;
+}
 
-        .project-glow {
-            transition: all 0.4s ease;
-            box-shadow: 0 4px 20px rgba(221, 99, 255, 0.15);
-            border-radius: 12px;
-            border: none;
-            height: 100%;
-            background: white;
-            position: relative;
-            overflow: hidden;
-        }
+/* remove: .projects-track:hover { animation-play-state: paused; } */
+/* remove: @keyframes marquee-scroll { ... } */
 
-        .project-glow:hover {
-            transform: translateY(-8px) scale(1.01);
-            box-shadow: 0 20px 40px rgba(221, 99, 255, 0.3), 0 0 25px rgba(221, 99, 255, 0.2);
-            animation: glow-pulse 1.8s ease-in-out infinite alternate;
-        }
+/* Cards */
+.project-card {
+    flex: 0 0 520px;
+    max-width: 520px;
+    transition: transform 0.3s ease;
+    position: relative;
+}
 
-        /* Gradient background on hover */
-        .project-glow:hover::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, rgba(221, 99, 255, 0.24), rgba(125, 26, 255, 0.344), rgba(235, 2, 56, 0.3));
-            z-index: 0;
-            border-radius: 12px;
-        }
-        .dark-theme .card-body:hover {
-            background: linear-gradient(135deg, #dd63ff, #0c1c3b, #3732bd) !important;
-            color: #fff;
-        }
+.project-glow {
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 20px rgba(221, 99, 255, 0.15);
+    border-radius: 12px;
+    border: none;
+    height: 100%;
+    background: white;
+    position: relative;
+    overflow: hidden;
+}
 
-        @keyframes glow-pulse {
-            from {
-                box-shadow: 0 20px 40px rgba(221, 99, 255, 0.3), 0 0 25px rgba(221, 99, 255, 0.2);
-            }
-            to {
-                box-shadow: 0 25px 50px rgba(221, 99, 255, 0.5), 0 0 35px rgba(221, 99, 255, 0.3);
-            }
-        }
+.project-glow:hover {
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: 0 20px 40px rgba(221, 99, 255, 0.3), 0 0 25px rgba(221, 99, 255, 0.2);
+    animation: glow-pulse 1.8s ease-in-out infinite alternate;
+}
 
-        /* Subtle particle effects for attractiveness */
-        .projects-marquee::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: 
-                radial-gradient(1px 1px at 20px 30px, #dd63ff33, transparent),
-                radial-gradient(1px 1px at 40px 70px, rgba(235, 2, 57, 0.4), transparent),
-                radial-gradient(0.5px 0.5px at 90px 40px, #7d1aff66, transparent);
-            background-repeat: repeat;
-            background-size: 120px 120px;
-            animation: particles-float 25s linear infinite;
-            opacity: 0.2;
-            pointer-events: none;
-            z-index: 1;
-        }
+/* Gradient overlay on hover */
+.project-glow:hover::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(221, 99, 255, 0.24), rgba(125, 26, 255, 0.344), rgba(235, 2, 56, 0.3));
+    z-index: 0;
+    border-radius: 12px;
+}
+.dark-theme .card-body:hover {
+    background: linear-gradient(135deg, #dd63ff, #0c1c3b, #3732bd) !important;
+    color: #fff;
+}
 
-        @keyframes particles-float {
-            from {
-                transform: translateY(0px) rotate(0deg);
-            }
-            to {
-                transform: translateY(-120px) rotate(360deg);
-            }
-        }
+@keyframes glow-pulse {
+    from {
+        box-shadow: 0 20px 40px rgba(221, 99, 255, 0.3), 0 0 25px rgba(221, 99, 255, 0.2);
+    }
+    to {
+        box-shadow: 0 25px 50px rgba(221, 99, 255, 0.5), 0 0 35px rgba(221, 99, 255, 0.3);
+    }
+}
 
-        /* Ensure card content fits compact width */
-        .project-card .card-body {
-            padding: 1.25rem;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            z-index: 1;
-        }
+/* Particles background (unchanged) */
+.projects-marquee::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+        radial-gradient(1px 1px at 20px 30px, #dd63ff33, transparent),
+        radial-gradient(1px 1px at 40px 70px, rgba(235, 2, 57, 0.4), transparent),
+        radial-gradient(0.5px 0.5px at 90px 40px, #7d1aff66, transparent);
+    background-repeat: repeat;
+    background-size: 120px 120px;
+    animation: particles-float 25s linear infinite;
+    opacity: 0.2;
+    pointer-events: none;
+    z-index: 1;
+}
 
-        .project-card .card-title {
-            font-size: 1.4rem;
-            margin-bottom: 0.75rem;
-            color: var(--dark);
-            font-weight: 600;
-        }
+@keyframes particles-float {
+    from { transform: translateY(0px) rotate(0deg); }
+    to   { transform: translateY(-120px) rotate(360deg); }
+}
 
-        .project-card ul {
-            font-size: 0.9rem;
-            line-height: 1.4;
-            padding-left: 1rem;
-            margin-bottom: 2.5rem; /* Space for the button */
-        }
+/* Card content */
+.project-card .card-body {
+    padding: 1.25rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+}
 
-        .project-card li {
-            margin-bottom: 0.5rem;
-            color: #444;
-        }
+.project-card .card-title {
+    font-size: 1.4rem;
+    margin-bottom: 0.75rem;
+    color: var(--dark);
+    font-weight: 600;
+}
 
-        /* Try It Button Styles */
-        .try-it-btn {
-            position: absolute;
-            bottom: 1.25rem;
-            right: 1.25rem;
-            padding: 0.5rem 1.25rem;
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: white;
-            border: none;
-            border-radius: 30px;
-            font-weight: 600;
-            font-size: 0.9rem;
-            text-decoration: none;
-            box-shadow: 0 4px 15px rgba(125, 26, 255, 0.3);
-            transition: all 0.3s ease;
-            display: inline-block;
-            text-align: center;
-            z-index: 2;
-        }
+.project-card ul {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    padding-left: 1rem;
+    margin-bottom: 2.5rem;
+}
 
-        .try-it-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(125, 26, 255, 0.4);
-            background: linear-gradient(135deg, var(--secondary), var(--accent));
-        }
+.project-card li {
+    margin-bottom: 0.5rem;
+    color: #444;
+}
 
-        .try-it-btn:active {
-            transform: translateY(0);
-        }
+/* Try It button */
+.try-it-btn {
+    position: absolute;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    padding: 0.5rem 1.25rem;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(125, 26, 255, 0.3);
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-align: center;
+    z-index: 2;
+}
 
-        /* Card color variations */
-        .Box-Shadow.ASRNew {
-            border-top: 4px solid var(--primary);
-        }
-        
-        .Box-Shadow.ASROne {
-            border-top: 4px solid var(--secondary);
-        }
-        
-        .Box-Shadow.ASRTwo {
-            border-top: 4px solid var(--accent);
-        }
-        
-          .Box-Shadow.ASRTwo:hover, .ASROne:hover, .ASRNew:hover {
-            border-top: 5px solid #facc15;
-        }
-        
+.try-it-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(125, 26, 255, 0.4);
+    background: linear-gradient(135deg, var(--secondary), var(--accent));
+}
 
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .project-card {
-                flex: 0 0 280px;
-                max-width: 280px;
-            }
-            .projects-track {
-                gap: 1rem;
-                animation-duration: 45s;
-            }
-            .project-card .card-body {
-                padding: 1rem;
-            }
-            .project-card .card-title {
-                font-size: 1.1rem;
-            }
-            .project-card ul {
-                font-size: 0.85rem;
-            }
-            .try-it-btn {
-                padding: 0.4rem 1rem;
-                font-size: 0.8rem;
-                bottom: 1rem;
-                right: 1rem;
-            }
-        }
+.try-it-btn:active {
+    transform: translateY(0);
+}
 
-        @media (max-width: 480px) {
-            .project-card {
-                flex: 0 0 250px;
-                max-width: 250px;
-            }
-            .projects-track {
-                padding: 0 1rem;
-            }
-        }
+/* Color variations */
+.Box-Shadow.ASRNew  { border-top: 4px solid var(--primary); }
+.Box-Shadow.ASROne  { border-top: 4px solid var(--secondary); }
+.Box-Shadow.ASRTwo  { border-top: 4px solid var(--accent); }
+
+.Box-Shadow.ASRTwo:hover,
+.Box-Shadow.ASROne:hover,
+.Box-Shadow.ASRNew:hover {
+    border-top: 5px solid #facc15;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .project-card {
+        flex: 0 0 280px;
+        max-width: 280px;
+    }
+    .project-card .card-body {
+        padding: 1rem;
+    }
+    .project-card .card-title {
+        font-size: 1.1rem;
+    }
+    .project-card ul {
+        font-size: 0.85rem;
+    }
+    .try-it-btn {
+        padding: 0.4rem 1rem;
+        font-size: 0.8rem;
+        bottom: 1rem;
+        right: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-card {
+        flex: 0 0 250px;
+        max-width: 250px;
+    }
+    .projects-track {
+        padding: 0 1rem;
+    }
+}
+
 
 /* ============ Theme styles ============ */
 .light-theme { background-color: #eee8dc; color: #5e463d; }
@@ -812,6 +790,9 @@ h1:hover{
 }
 
 .EDLogo{ border-radius: 50px; }
+.ArAnchor{
+    text-decoration: none;
+}
 
 /* Cursor Effects */
 .cursor-dot {
