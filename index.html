@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Anshuman Portfolio</title>
+    <title>Anshuman's Portfolio</title>
     <link rel="icon" type="image/x-icon" href="AnshICon.jpg">
     <meta name="apple-mobile-web-app-title" content="yes">
     <link rel="apple-touch-icon" href="AnshICon.jpg">
@@ -29,174 +30,254 @@
     <script src="Script.js" defer></script>
     <link rel="manifest" href="manifest.json">
 </head>
+
 <body class="light-theme">
 
-<!-- Loader (upgraded) -->
-<div id="loader" class="site-loader" role="status" aria-live="polite" aria-label="Page loading">
-  <div class="loader-wrap">
-    <div class="ring ring-outer"></div>
-    <div class="logo">Anshuman</div>
-    <div class="ring ring-inner"></div>
-    <div class="loader-bar" aria-hidden="true"><span></span></div>
-    <p class="loading-text">Welcome to my portal...</p>
-  </div>
-</div>
-
-<!-- Cursor Effects -->
-<div class="cursor-dot"></div>
-<div class="cursor-circle"></div>
-
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <div class="container-fluid">
-        <a class="navbar-brand NavText" href="/Anshuman_portfolio"><strong>Anshuman Samantaray</strong></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#skills">Skills</a></li>
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#experience">Experience</a></li>
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#projects">Projects</a></li>
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#education">Education</a></li>
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li>
-                <li class="nav-item"><a class="nav-link" href="https://anshumanray.tiiny.site/" target="_blank" rel="noopener noreferrer">Resume</a></li>
-                <li class="nav-item">
-                    <button class="btn theme-toggle-button" aria-label="Toggle Dark Mode">
-                        <span class="iconify sunicon" data-icon="feather-sun" id="sun-icon"></span>
-                        <span class="iconify" data-icon="feather-moon" id="moon-icon"></span>
-                    </button>
-                </li>
-            </ul>
+    <!-- Loader (upgraded) -->
+    <div id="loader" class="site-loader" role="status" aria-live="polite" aria-label="Page loading">
+        <div class="loader-wrap">
+            <div class="ring ring-outer"></div>
+            <div class="ring ring-inner"></div>
+            <div class="logo"><i>Anshuman</i></div>
+            <div class="loader-bar" aria-hidden="true"><span></span></div>
+            <p class="loading-text">Welcome to my portal...</p>
         </div>
     </div>
-</nav>
 
-<!-- Header -->
-<header class="text-white text-center position-relative" data-aos="fade-in">
-    <div class="video-container parallax">
-        <video autoplay muted loop id="headerVideo">
-            <source src="ABU.mp4" type="video/mp4">
-        </video>
-    </div>
-    <div class="canvas-overlay gradient-overlay"></div>
-    <div class="container d-flex align-items-center flex-column">
-         <h1 class="text-light ArTyped">
-      <!-- typed target -->
-      <span id="typed-text" class="ArType" aria-live="polite"></span>
-      <span class="ASRHi wave">
-  <img alt="👋" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f44b.png" style="height:1em;width:1em;vertical-align:-0.1em;">
-</span>
+    <!-- Cursor Effects -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-circle"></div>
 
-      <!-- fallback if JS disabled -->
-      <noscript><span class="ArType">Hi, I'm Anshuman</span></noscript>
-    </h1>
-        <p class="lead mt-2 ArHeadingText" data-aos="fade-up" data-aos-delay="200">
-            A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with .Net Core / React Native / JavaScript and some other cool libraries and frameworks.
-        </p>
-        <div class="social-media-div" data-aos="fade-up" data-aos-delay="400">
-            <a href="https://github.com/anshumanray19" class="icon-button github hover-scale" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/anshuman-samantaray-851a74137/" class="icon-button linkedin hover-scale" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <a href="mailto:anshumansamantaray1@gmail.com" class="icon-button google hover-scale" target="_blank"><i class="fas fa-envelope"></i></a>
-            <a href="https://www.facebook.com/anshumanray29/" class="icon-button facebook hover-scale" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/anshumanray_" class="icon-button instagram hover-scale" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://x.com/Anshumanray29" class="icon-button twitter hover-scale" target="_blank"><i class="fab fa-x-twitter"></i></a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand NavText" href="/Anshuman_portfolio"><strong>Anshuman Samantaray</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link smooth-scroll" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link smooth-scroll" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link smooth-scroll" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link smooth-scroll" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://anshumanray.tiiny.site/" target="_blank"
+                            rel="noopener noreferrer">Resume</a></li>
+                    <li class="nav-item">
+                        <button class="btn theme-toggle-button" aria-label="Toggle Dark Mode">
+                            <span class="iconify sunicon" data-icon="feather-sun" id="sun-icon"></span>
+                            <span class="iconify" data-icon="feather-moon" id="moon-icon"></span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</header>
+    </nav>
 
-<!-- About Section -->
-<section id="about" class="py-5" data-aos="fade-right" data-aos-duration="1000">
-    <div class="container">
-        <h1 class="text-center ARheading">What I Do</h1>
-        <p class="text-center ArHover" data-aos="fade-up" data-aos-delay="100">
-            FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK<br>
-⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications<br>
-⚡ With a strong focus on creating scalable solutions, I thrive on tackling challenges and delivering impactful results.<br>
-⚡ I am passionate about delivering high-quality software that drives innovation.<br>
-⚡ Explore my portfolio to see my work and let's connect to discuss on next project!<br>
-        </p>
-    </div>
-</section>
-
-<!-- Skills Section -->
-<section id="skills" class="py-5" data-aos="flip-left">
-    <div class="container">
-        <h1 class="text-center ARheading mb-4">Tech Stacks</h1>
-        <div class="row justify-content-center">
-            <div class="col-md-3 col-sm-6 text-center" data-aos="zoom-in" data-aos-delay="100"><i class="fab fa-html5 fa-3x"></i><h4>HTML5</h4></div>
-            <div class="col-md-3 col-sm-6 text-center" data-aos="zoom-in" data-aos-delay="200"><i class="fab fa-css3-alt fa-3x"></i><h4>CSS3</h4></div>
-            <div class="col-md-3 col-sm-6 text-center" data-aos="zoom-in" data-aos-delay="300"><i class="fab fa-js fa-3x"></i><h4>JavaScript</h4></div>
-            <div class="col-md-3 col-sm-6 text-center" data-aos="zoom-in" data-aos-delay="400"><i class="fas fa-cogs fa-3x"></i><h4>.NET</h4></div>
-            <div class="col-md-3 col-sm-6 text-center" data-aos="zoom-in" data-aos-delay="500"><i class="fab fa-react fa-3x"></i><h4>React Native</h4></div>
-            <div class="col-md-3 col-sm-6 text-center" data-aos="zoom-in" data-aos-delay="600"><i class="fab fa-java fa-3x"></i><h4>Java</h4></div>
-            <div class="col-md-3 col-sm-6 text-center" data-aos="zoom-in" data-aos-delay="700"><i class="fab fa-angular fa-3x"></i><h4>Angular</h4></div>
-            <div class="col-md-3 col-sm-6 text-center" data-aos="zoom-in" data-aos-delay="800"><i class="fas fa-database fa-3x"></i><h4>MS SQL</h4></div>
-            <div class="col-md-3 col-sm-6 text-center" data-aos="zoom-in" data-aos-delay="900"><i class="fab fa-wordpress fa-3x"></i><h4>WordPress CMS</h4></div>
-            <div class="col-md-3 col-sm-6 text-center" data-aos="zoom-in" data-aos-delay="1000"><i class="fa fa-umbrella fa-3x"></i><h4>Umbraco CMS</h4></div>
+    <!-- Header -->
+    <header class="text-white text-center position-relative" data-aos="fade-in">
+        <div class="video-container parallax">
+            <video autoplay muted loop id="headerVideo">
+                <source src="ABU.mp4" type="video/mp4">
+            </video>
         </div>
-    </div>
-</section>
+        <div class="canvas-overlay gradient-overlay"></div>
+        <div class="container d-flex align-items-center flex-column">
+            <h1 class="text-light ArTyped">
+                <!-- typed target -->
+                <span id="typed-text" class="ArType" aria-live="polite"></span>
+                <span class="ASRHi wave">
+                    <img alt="👋" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f44b.png"
+                        style="height:1em;width:1em;vertical-align:-0.1em;">
+                </span>
 
-<!-- Proficiency Section -->
-<section id="proficiency" class="py-5" data-aos="flip-up">
-    <div class="container">
-        <h1 class="text-center mb-5 ARheading">Proficiency</h1>
-        <div class="skill" data-aos="fade-right"><p>Frontend/Design</p>
-            <div class="progress">
-                <div class="progress-bar animate-fill" data-width="90">
-                    <span class="progress-label">90%</span>
+                <!-- fallback if JS disabled -->
+                <noscript><span class="ArType">Hi, I'm Anshuman</span></noscript>
+            </h1>
+            <p class="lead mt-2 ArHeadingText" data-aos="fade-up" data-aos-delay="200">
+                A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile
+                applications with .Net Core / React Native / React JS / JavaScript and some other cool libraries and
+                frameworks.
+            </p>
+            <div class="social-media-div" data-aos="fade-up" data-aos-delay="400">
+                <a href="https://github.com/anshumanray19" class="icon-button github hover-scale" title="GitHub"
+                    target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/anshuman-samantaray-851a74137/"
+                    class="icon-button linkedin hover-scale" title="Linkedin" target="_blank"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:anshumansamantaray1@gmail.com" class="icon-button google hover-scale"
+                    title="Google Mail" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a href="mailto:anshumanray9@icloud.com" class="icon-button apple hover-scale" title="Icloud Mail"
+                    target="_blank"><i class="fab fa-apple"></i></a>
+                <a href="https://www.facebook.com/anshumanray29/" class="icon-button facebook hover-scale"
+                    title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/anshumanray_" class="icon-button instagram hover-scale"
+                    title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/Anshumanray29" class="icon-button twitter hover-scale" title="X Twitter"
+                    target="_blank"><i class="fab fa-x-twitter"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5" data-aos="fade-right" data-aos-duration="1000">
+        <div class="container">
+            <h1 class="text-center ARheading">What I Do</h1>
+            <p class="text-center ArHover" data-aos="fade-up" data-aos-delay="100">
+                FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK<br>
+                ⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications<br>
+                ⚡ With a strong focus on creating scalable solutions, I thrive on tackling challenges and delivering
+                impactful results.<br>
+                ⚡ I am passionate about delivering high-quality software that drives innovation.<br>
+                ⚡ Explore my portfolio to see my work and let's connect to discuss on next project!<br>
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5" data-aos="flip-left">
+        <div class="container">
+            <h1 class="text-center ARheading mb-4">Tech Stacks</h1>
+            <div class="row justify-content-center">
+
+                <div class="col-md-3 col-sm-6 text-center" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fab fa-html5 fa-3x"></i>
+                    <h4>HTML5</h4>
+                </div>
+
+                <div class="col-md-3 col-sm-6 text-center" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fab fa-css3-alt fa-3x"></i>
+                    <h4>CSS3</h4>
+                </div>
+
+                <div class="col-md-3 col-sm-6 text-center" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="fab fa-js fa-3x"></i>
+                    <h4>JavaScript</h4>
+                </div>
+
+                <div class="col-md-3 col-sm-6 text-center" data-aos="zoom-in" data-aos-delay="400">
+                    <i class="fas fa-cogs fa-3x"></i>
+                    <h4>.NET</h4>
+                </div>
+
+                <div class="col-md-3 col-sm-6 text-center" data-aos="zoom-in" data-aos-delay="500">
+                    <i class="fab fa-react fa-3x"></i>
+                    <h4>React Native</h4>
+                </div>
+
+                <!-- NEW: ReactJS -->
+                <div class="col-md-3 col-sm-6 text-center" data-aos="zoom-in" data-aos-delay="550">
+                    <i class="fab fa-react fa-3x"></i>
+                    <h4>ReactJS</h4>
+                </div>
+
+                <div class="col-md-3 col-sm-6 text-center" data-aos="zoom-in" data-aos-delay="600">
+                    <i class="fab fa-java fa-3x"></i>
+                    <h4>Java</h4>
+                </div>
+
+                <div class="col-md-3 col-sm-6 text-center" data-aos="zoom-in" data-aos-delay="700">
+                    <i class="fab fa-angular fa-3x"></i>
+                    <h4>Angular</h4>
+                </div>
+
+                <div class="col-md-3 col-sm-6 text-center" data-aos="zoom-in" data-aos-delay="800">
+                    <i class="fas fa-database fa-3x"></i>
+                    <h4>MS SQL</h4>
+                </div>
+
+                <div class="col-md-3 col-sm-6 text-center" data-aos="zoom-in" data-aos-delay="900">
+                    <i class="fab fa-wordpress fa-3x"></i>
+                    <h4>WordPress CMS</h4>
+                </div>
+
+                <div class="col-md-3 col-sm-6 text-center" data-aos="zoom-in" data-aos-delay="950">
+                    <i class="fa fa-umbrella fa-3x"></i>
+                    <h4>Umbraco CMS</h4>
+                </div>
+
+                <div class="col-md-3 col-sm-6 text-center" data-aos="zoom-in" data-aos-delay="1000">
+                    <img src="dotnetnuke.svg" alt="DNN (DotNetNuke)" class="tech-icon dnn-icon">
+                    <h4>DNN (DotNetNuke)</h4>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Proficiency Section -->
+    <section id="proficiency" class="py-5" data-aos="flip-up">
+        <div class="container">
+            <h1 class="text-center mb-5 ARheading">Proficiency</h1>
+            <div class="skill" data-aos="fade-right">
+                <p>Frontend/Design</p>
+                <div class="progress">
+                    <div class="progress-bar animate-fill" data-width="90">
+                        <span class="progress-label">90%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill" data-aos="fade-right" data-aos-delay="100">
+                <p>Backend</p>
+                <div class="progress">
+                    <div class="progress-bar animate-fill" data-width="70">
+                        <span class="progress-label">70%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill" data-aos="fade-right" data-aos-delay="200">
+                <p>Programming</p>
+                <div class="progress">
+                    <div class="progress-bar animate-fill" data-width="80">
+                        <span class="progress-label">80%</span>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="skill" data-aos="fade-right" data-aos-delay="100"><p>Backend</p>
-            <div class="progress">
-                <div class="progress-bar animate-fill" data-width="70">
-                    <span class="progress-label">70%</span>
-                </div>
-            </div>
-        </div>
-        <div class="skill" data-aos="fade-right" data-aos-delay="200"><p>Programming</p>
-            <div class="progress">
-                <div class="progress-bar animate-fill" data-width="80">
-                    <span class="progress-label">80%</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
-<!-- Company Experience -->
-<section id="experience" class="py-5 company-section" data-aos="fade-left">
-    <div class="container">
-        <h1 class="text-center mb-4 ARheading">Work Experience</h1>
-        <div class="row mb-4" data-aos="fade-up">
-            <div class="col-md-2"><a href="https://epicmindsit.com/" class="ArAnchor" target="_blank"><img src="Company_logo.jpg" alt="Epic Minds IT" class="company-image"></a></div>
-            <div class="col-md-10 ArHover">
-                <a href="https://epicmindsit.com/" class="ArAnchor" target="_blank"><h2>Epic Minds IT.</h2></a>
-                <p>Position: Software Developer (On Site)</p>
-                <p>Nov 2022 - Current</p>
-                <p>Location : Bangalore</p>
-                <p>Software Developer with 2 yrs plus experience in full-stack development, proficient in .Net core, React Native and Angular
+    <!-- Company Experience -->
+    <section id="experience" class="py-5 company-section" data-aos="fade-left">
+        <div class="container">
+            <h1 class="text-center mb-4 ARheading">Work Experience</h1>
+            <div class="row mb-4" data-aos="fade-up">
+                <div class="col-md-2"><a href="https://epicmindsit.com/" class="ArAnchor" target="_blank"><img
+                            src="Company_logo.jpg" alt="Epic Minds IT" class="company-image"></a></div>
+                <div class="col-md-10 ArHover">
+                    <a href="https://epicmindsit.com/" class="ArAnchor" target="_blank">
+                        <h2>Epic Minds IT.</h2>
+                    </a>
+                    <p>Position: Software Developer (On Site)</p>
+                    <p>Nov 2022 - Current</p>
+                    <p>Location : Bangalore</p>
+                    <p>Software Developer with 3+ yrs experience in full-stack development, proficient in .Net core,
+                        React Native, React JS and Angular
                     </p>
+                </div>
+            </div>
+            <div class="row" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-md-2"><a href="https://www.coolsofttech.com/" class="ArAnchor" target="_blank"><img
+                            src="Coolsoft.webp" alt="COOLSOFT LLC" class="company-image"></a></div>
+                <div class="col-md-10 ArHover"><a href="https://www.coolsofttech.com/" class="ArAnchor" target="_blank">
+                        <h2>COOLSOFT LLC.</h2>
+                    </a>
+                    <p>Position: CMS Developer (Remote)</p>
+                    <p>Dec 2022 - Current</p>
+                    <p>Location : Louisville</p>
+                    <p>Software Developer with 3+ yrs experience in Content Management System, proficient in .Net MVC,
+                        Umbraco (CMS) and DotNetNuke (DNN)</p>
+                </div>
             </div>
         </div>
-        <div class="row" data-aos="fade-up" data-aos-delay="200">
-            <div class="col-md-2"><a href="https://www.coolsofttech.com/" class="ArAnchor" target="_blank"><img src="Coolsoft.webp" alt="COOLSOFT LLC" class="company-image"></a></div>
-            <div class="col-md-10 ArHover"><a href="https://www.coolsofttech.com/" class="ArAnchor" target="_blank"><h2>COOLSOFT LLC.</h2></a>
-                <p>Position: CMS Developer (Remote)</p>
-                <p>Dec 2022 - Current</p>
-                <p>Location : Louisville</p>
-                <p>Software Developer with 2 yrs plus experience in Content Management System, proficient in .Net MVC,
-                    Umbraco (CMS) and DotNetNuke (DNN)</p>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
-<!-- Projects Section - Updated with Compact Scrolling Marquee -->
- <section id="projects" class="py-5" data-aos="zoom-in">
+    <!-- Projects Section - Updated with Compact Scrolling Marquee -->
+    <section id="projects" class="py-5" data-aos="zoom-in">
         <div class="container">
             <h1 class="text-center mb-5 ARheading">Projects</h1>
             <div class="projects-marquee">
@@ -206,15 +287,20 @@
                         <div class="card h-100 shadow project-glow">
                             <div class="card-body Box-Shadow ASRNew">
                                 <h3 class="card-title">Avo Max Argo (E-Commerce Platform)</h3>
-                               
-                                    <ul class="card-text">
-                                        <li>Architected a cross-platform multi-vendor marketplace using React.js and React Native, backed by .NET Core 8.0 and SQL Server for 4 distinct user roles.</li>
-                                        <li>Optimized frontend data binding and state management, ensuring UI consistency across Android, iOS, and Web platforms.</li>
-                                        <li>Configured deployment infrastructure for Development and UAT environments on AWS EC2, ensuring continuous availability for QA testing.</li>
-                                        <li>Engineered a hybrid authentication system using OTP-based validation for mobile and encryption for web, closing security vulnerabilities.</li>
-                                    </ul>
-                                
-                                <a href="http://13.200.17.76:8002/" target="_blank" rel="noopener noreferrer" class="try-it-btn" title="Avo Max Argo Opens in a new window">Try It Here</a>
+
+                                <ul class="card-text">
+                                    <li>Architected a cross-platform multi-vendor marketplace using React.js and React
+                                        Native, backed by .NET Core 8.0 and SQL Server for 4 distinct user roles.</li>
+                                    <li>Optimized frontend data binding and state management, ensuring UI consistency
+                                        across Android, iOS, and Web platforms.</li>
+                                    <li>Configured deployment infrastructure for Development and UAT environments on AWS
+                                        EC2, ensuring continuous availability for QA testing.</li>
+                                    <li>Engineered a hybrid authentication system using OTP-based validation for mobile
+                                        and encryption for web, closing security vulnerabilities.</li>
+                                </ul>
+
+                                <a href="http://13.200.17.76:8002/" target="_blank" rel="noopener noreferrer"
+                                    class="try-it-btn" title="Avo Max Argo Opens in a new window">Try It Here</a>
                             </div>
                         </div>
                     </div>
@@ -223,14 +309,20 @@
                         <div class="card h-100 shadow project-glow">
                             <div class="card-body Box-Shadow ASROne">
                                 <h3 class="card-title">Supplier Diversity Management System (SDMS)</h3>
-                               
-                                    <ul class="card-text">
-                                        <li>Created and maintained a corporate website, ensuring ADA, WCAG 2.0 AA and WCAG 2.1 AA accessibility standards compliance using .Net Core, c#, HTML5, CSS3, jQuery, bootstrap and MS SQL.</li>
-                                        <li>Integrated two-factor authentication (2FA) protocols in collaboration with the development team to enhance security and meet stringent client requirements.</li>
-                                        <li>Implemented front-end enhancements and optimizations to improve user experience and accessibility for color blind users.</li>
-                                    </ul>
-                            
-                                <a href="https://dms.coolsofttech.com" target="_blank" rel="noopener noreferrer" class="try-it-btn" title="SDMS Opens in a new window">Try It Here</a>
+
+                                <ul class="card-text">
+                                    <li>Created and maintained a corporate website, ensuring ADA, WCAG 2.0 AA and WCAG
+                                        2.1 AA accessibility standards compliance using .Net Core, c#, HTML5, CSS3,
+                                        jQuery, bootstrap and MS SQL.</li>
+                                    <li>Integrated two-factor authentication (2FA) protocols in collaboration with the
+                                        development team to enhance security and meet stringent client requirements.
+                                    </li>
+                                    <li>Implemented front-end enhancements and optimizations to improve user experience
+                                        and accessibility for color blind users.</li>
+                                </ul>
+
+                                <a href="https://dms.coolsofttech.com" target="_blank" rel="noopener noreferrer"
+                                    class="try-it-btn" title="SDMS Opens in a new window">Try It Here</a>
                             </div>
                         </div>
                     </div>
@@ -239,15 +331,20 @@
                         <div class="card h-100 shadow project-glow">
                             <div class="card-body Box-Shadow ASRTwo">
                                 <h3 class="card-title">Texas Education Agency (TEA)</h3>
-                               
-                                    <ul class="card-text">
-                                        <li>Provided support for a robust online web application using .NET MVC, C#, HTML, CSS, Bootstrap, MS SQL Server, Umbraco CMS, jQuery, and JavaScript.</li>
-                                        <li>Executed server-side logic and data processing, including user authentication, authorization, and session management, ensuring optimal functionality.</li>
-                                        <li>Conducted regular performance tuning and optimization to maintain application efficiency and responsiveness resulting 20% increase in user engagement.</li>
-                                        <li>Utilized a modular architecture, allowing for easier scalability and future feature additions.</li>
-                                    </ul>
-                                
-                                <a href="https://www.txel.org" target="_blank" rel="noopener noreferrer" class="try-it-btn" title="txel Opens in a new window">Try It Here</a>
+
+                                <ul class="card-text">
+                                    <li>Provided support for a robust online web application using .NET MVC, C#, HTML,
+                                        CSS, Bootstrap, MS SQL Server, Umbraco CMS, jQuery, and JavaScript.</li>
+                                    <li>Executed server-side logic and data processing, including user authentication,
+                                        authorization, and session management, ensuring optimal functionality.</li>
+                                    <li>Conducted regular performance tuning and optimization to maintain application
+                                        efficiency and responsiveness resulting 20% increase in user engagement.</li>
+                                    <li>Utilized a modular architecture, allowing for easier scalability and future
+                                        feature additions.</li>
+                                </ul>
+
+                                <a href="https://www.txel.org" target="_blank" rel="noopener noreferrer"
+                                    class="try-it-btn" title="txel Opens in a new window">Try It Here</a>
                             </div>
                         </div>
                     </div>
@@ -256,16 +353,24 @@
                         <div class="card h-100 shadow project-glow">
                             <div class="card-body Box-Shadow ASRTwo">
                                 <h3 class="card-title">Project Oversight (POS)</h3>
-                                
-                                    <ul class="card-text">
-                                        <li>Created an Expo mobile application using React Native, .NET Core, MS SQL Server, and Typescript.</li>
-                                        <li>Enabled detailed evaluation of projects and employees, provided clear insights into project status, monitored employee contributions, tracked project progress with dashboards, generated weekly status reports, and optimized resource utilization.</li>
-                                        <li>Improved user experience by adding features for daily task entries and employee record keeping.</li>
-                                        <li>Integrated push notifications to keep users informed of project updates and deadlines.</li>
-                                        <li>Conducted usability testing to gather feedback and improve 60% performance growth in application design and functionality.</li>
-                                    </ul>
-                                
-                                <a href="http://pos.coolsofttech.com:9002" target="_blank" rel="noopener noreferrer" class="try-it-btn" title="coolsoft-tech Opens in a new window">Try It Here</a>
+
+                                <ul class="card-text">
+                                    <li>Created an Expo mobile application using React Native, .NET Core, MS SQL Server,
+                                        and Typescript.</li>
+                                    <li>Enabled detailed evaluation of projects and employees, provided clear insights
+                                        into project status, monitored employee contributions, tracked project progress
+                                        with dashboards, generated weekly status reports, and optimized resource
+                                        utilization.</li>
+                                    <li>Improved user experience by adding features for daily task entries and employee
+                                        record keeping.</li>
+                                    <li>Integrated push notifications to keep users informed of project updates and
+                                        deadlines.</li>
+                                    <li>Conducted usability testing to gather feedback and improve 60% performance
+                                        growth in application design and functionality.</li>
+                                </ul>
+
+                                <a href="http://pos.coolsofttech.com:9002" target="_blank" rel="noopener noreferrer"
+                                    class="try-it-btn" title="coolsoft-tech Opens in a new window">Try It Here</a>
                             </div>
                         </div>
                     </div>
@@ -274,19 +379,25 @@
                         <div class="card h-100 shadow project-glow">
                             <div class="card-body Box-Shadow ASROne">
                                 <h3 class="card-title">CoolWorks United States</h3>
-                                
-                                    <ul class="card-text">
-                                        <li>Maintained a recruitment web application using .NET Web Forms, C#, HTML, CSS, MS SQL Server, jQuery, and JavaScript.</li>
-                                        <li>Applied performance optimizations, enhancing scalability and responsiveness, resulting in 35% increase in user traffic.</li>
-                                        <li>Introduced caching mechanisms to lighten server load and improve page load times.</li>
-                                        <li>Enhanced security by implementing best practices for data protection and secure coding standards.</li>
-                                    </ul>
-                               
-                                <a href="https://cw.coolsoft-tech.com/vms/Login.aspx?ReturnUrl=%2fvms%2fDefault.aspx" target="_blank" rel="noopener noreferrer" class="try-it-btn" title="Coolworks Opens in a new window">Try It Here</a>
+
+                                <ul class="card-text">
+                                    <li>Maintained a recruitment web application using .NET Web Forms, C#, HTML, CSS, MS
+                                        SQL Server, jQuery, and JavaScript.</li>
+                                    <li>Applied performance optimizations, enhancing scalability and responsiveness,
+                                        resulting in 35% increase in user traffic.</li>
+                                    <li>Introduced caching mechanisms to lighten server load and improve page load
+                                        times.</li>
+                                    <li>Enhanced security by implementing best practices for data protection and secure
+                                        coding standards.</li>
+                                </ul>
+
+                                <a href="https://cw.coolsoft-tech.com/vms/Login.aspx?ReturnUrl=%2fvms%2fDefault.aspx"
+                                    target="_blank" rel="noopener noreferrer" class="try-it-btn"
+                                    title="Coolworks Opens in a new window">Try It Here</a>
                             </div>
                         </div>
                     </div>
-                   
+
                 </div>
             </div>
         </div>
@@ -294,74 +405,86 @@
 
 
 
-<!-- Education Section -->
-<section id="education" class="py-5 education-section" data-aos="fade-right">
-    <div class="container">
-        <h1 class="text-center mb-5 ARheading">Education</h1>
-        <div class="row">
-            <div class="col-md-6 mb-4 ArHover" data-aos="fade-up">
-                <a class="ArAnchor" href="https://pmec.ac.in/" target="_blank">
-                    <img src="PMEC_logo.jpg" class="EDLogo mb-4" alt="Parala Maharaja Engineering College" width="75" height="75">
-                 <h3 class="mt-2">Parala Maharaja Engineering College</h3>
-                <p>Aug 2018- Oct 2021</p>
-                <p>Ranked top 10% in the branch. Took courses about Auto CAD And SAP</p>
-                <p>8.04 CGPA</p>
-                </a>
-            </div>
-            <div class="col-md-6 ArHover" data-aos="fade-up" data-aos-delay="200">
-                <a class="ArAnchor" href="https://gpdhenkanal.org/" target="_blank">
-                    <img src="DiplomaLogo.jpg" class="EDLogo mb-4" alt="Govt. Polytechnic Dhenkanal" width="75" height="75">
-                <h3 class="mt-2">Govt. Polytechnic Dhenkanal</h3>
-                <p>June 2014- Aug 2017</p>
-                <p>Participated in the research solar water purifier and published 3 papers.</p>
-                <p>71 Percentage</p>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Contact Section -->
-<section id="contact" class="py-5 contact-section" data-aos="zoom-out">
-    <div class="container">
-        <div class="contact-content">
-            <div class="contact-text">
-                <h1>Reach Out to me!</h1>
-                <p class="ArHover">DISCUSS A PROJECT OR GET IN TOUCH! INBOX IS OPEN FOR YOU.</p>
-                <p class="ArHover"><i class="fas fa-map-marker-alt"></i> Bangalore, Karnataka</p>
-                <div class="social-media-div">
-                    <a href="https://github.com/anshumanray19" class="icon-button github hover-scale" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/anshuman-samantaray-851a74137/" class="icon-button linkedin hover-scale" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="mailto:anshumansamantaray1@gmail.com" class="icon-button google hover-scale" target="_blank"><i class="fas fa-envelope"></i></a>
-                    <a href="https://www.facebook.com/anshumanray29/" class="icon-button facebook hover-scale" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/anshumanray_" class="icon-button instagram hover-scale" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://x.com/Anshumanray29" class="icon-button twitter hover-scale" target="_blank"><i class="fab fa-x-twitter"></i></a>
+    <!-- Education Section -->
+    <section id="education" class="py-5 education-section" data-aos="fade-right">
+        <div class="container">
+            <h1 class="text-center mb-5 ARheading">Education</h1>
+            <div class="row">
+                <div class="col-md-6 mb-4 ArHover" data-aos="fade-up">
+                    <a class="ArAnchor" href="https://pmec.ac.in/" target="_blank">
+                        <img src="PMEC_logo.jpg" class="EDLogo mb-4" alt="Parala Maharaja Engineering College"
+                            width="75" height="75">
+                        <h3 class="mt-2">Parala Maharaja Engineering College</h3>
+                        <p>Aug 2018- Oct 2021</p>
+                        <p>Ranked top 10% in the branch. Took courses about Auto CAD And SAP</p>
+                        <p>8.04 CGPA</p>
+                    </a>
+                </div>
+                <div class="col-md-6 ArHover" data-aos="fade-up" data-aos-delay="200">
+                    <a class="ArAnchor" href="https://gpdhenkanal.org/" target="_blank">
+                        <img src="DiplomaLogo.jpg" class="EDLogo mb-4" alt="Govt. Polytechnic Dhenkanal" width="75"
+                            height="75">
+                        <h3 class="mt-2">Govt. Polytechnic Dhenkanal</h3>
+                        <p>June 2014- Aug 2017</p>
+                        <p>Participated in the research solar water purifier and published 3 papers.</p>
+                        <p>71 Percentage</p>
+                    </a>
                 </div>
             </div>
-            <div class="contact-image">
-                <a href="https://linktr.ee/anshumanray" aria-label="anshumanray">
-                <img src="IMG_1581.JPG" alt="Anshuman" class="rounded-image">
-                </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 contact-section" data-aos="zoom-out">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-text">
+                    <h1>Reach Out to me!</h1>
+                    <p class="ArHover">DISCUSS A PROJECT OR GET IN TOUCH! INBOX IS OPEN FOR YOU.</p>
+                    <p class="ArHover"><i class="fas fa-map-marker-alt"></i> Bangalore, Karnataka</p>
+                    <div class="social-media-div" data-aos="fade-up" data-aos-delay="400">
+                        <a href="https://github.com/anshumanray19" class="icon-button github hover-scale" title="GitHub"
+                            target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/anshuman-samantaray-851a74137/"
+                            class="icon-button linkedin hover-scale" title="Linkedin" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:anshumansamantaray1@gmail.com" class="icon-button google hover-scale"
+                            title="Google Mail" target="_blank"><i class="fas fa-envelope"></i></a>
+                        <a href="mailto:anshumanray9@icloud.com" class="icon-button apple hover-scale"
+                            title="Icloud Mail" target="_blank"><i class="fab fa-apple"></i></a>
+                        <a href="https://www.facebook.com/anshumanray29/" class="icon-button facebook hover-scale"
+                            title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/anshumanray_" class="icon-button instagram hover-scale"
+                            title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://x.com/Anshumanray29" class="icon-button twitter hover-scale" title="X Twitter"
+                            target="_blank"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="contact-image">
+                    <a href="https://linktr.ee/anshumanray" aria-label="anshumanray">
+                        <img src="IMG_1581.JPG" alt="Anshuman" class="rounded-image">
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Footer -->
-<footer class="text-white text-center py-3">
-    <div class="container">
-        <p class="FooterText">&copy; 2024 Anshuman Samantaray. All rights reserved.</p>
-    </div>
-</footer>
+    <!-- Footer -->
+    <footer class="text-white text-center py-3">
+        <div class="container">
+            <p class="FooterText">&copy; 2024 Anshuman Samantaray. All rights reserved.</p>
+        </div>
+    </footer>
 
-<!-- Premium Scroll to Top Button (progress ring + arrow) -->
-<button id="scrollToTopBtn" class="scrolltop-premium" aria-label="Back to top" title="Back to top">
-  <svg class="progress-ring" width="56" height="56" viewBox="0 0 56 56" aria-hidden="true">
-    <circle class="progress-ring__bg" cx="28" cy="28" r="22"></circle>
-    <circle class="progress-ring__circle" cx="28" cy="28" r="22"></circle>
-  </svg>
-  <span class="scroll-arrow"><i class="fa-solid fa-arrow-up"></i></span>
-</button>
+    <!-- Premium Scroll to Top Button (progress ring + arrow) -->
+    <button id="scrollToTopBtn" class="scrolltop-premium" aria-label="Back to top" title="Back to top">
+        <svg class="progress-ring" width="56" height="56" viewBox="0 0 56 56" aria-hidden="true">
+            <circle class="progress-ring__bg" cx="28" cy="28" r="22"></circle>
+            <circle class="progress-ring__circle" cx="28" cy="28" r="22"></circle>
+        </svg>
+        <span class="scroll-arrow"><i class="fa-solid fa-arrow-up"></i></span>
+    </button>
 
 </body>
+
 </html>
