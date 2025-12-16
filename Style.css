@@ -53,7 +53,7 @@ footer {
     bottom: 0;
     width: 100%;
     color: #fff;
-    background: linear-gradient(135deg, #27282c, #5e463d7e, #131313ba);
+    background: linear-gradient(135deg, #b21f1f, #5e463d7e, #0f4c75);
     background-size: 400% 400%;
     transition: background 0.3s ease-in-out;
     animation: footer-gradient-animation 5s ease infinite;
@@ -76,7 +76,7 @@ nav {
     box-shadow: none;
 }
 nav.scrolled {
-    background: linear-gradient(135deg, #27282c, #5e463d7e, #131313ba);
+    background: linear-gradient(135deg, #0f4c75, #5e463d7e, #b21f1f);
     background-size: 400% 400%;
     animation: gradient-animation 8s ease infinite;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -91,7 +91,7 @@ nav.scrolled {
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
-    animation: typing 6s steps(500, end), blink-caret .6s step-end;
+    animation: typing 9s steps(1000, end), blink-caret .9s step-end;
     position: relative;
     font-size: 1.8rem;
     font-weight: 700;
@@ -106,7 +106,7 @@ nav.scrolled {
     transition: width 0.3s ease-in-out;
 }
 .NavText:hover::after { width: 100%; }
-@keyframes typing { from { width: 0; } to { width: 100%; } }
+@keyframes typing { from { width: 0; } to { width: 70%; } }
 @keyframes blink-caret { from, to { border-color: transparent; } 50% { border-color: #f9f8f6; } }
 
 .navbar-nav { display: flex; align-items: center; }
@@ -181,6 +181,11 @@ nav.scrolled {
     margin-bottom: 30px;
     margin-top: 50px;
 }
+.Adec{
+    text-align: center;
+}
+.whatsapp i { background-color: #25D366; }
+
 
 /* accessibility: respect reduced motion */
 @media (prefers-reduced-motion: reduce) {
@@ -419,12 +424,14 @@ nav.scrolled {
 }
 .rounded-image {
     border-radius: 15px;
-    transition: inherit; /* Inherit transition from parent */
-    width: 100%;
-    height: auto;
+    transition: inherit;
     display: block;
+    width: 250px;
+    height: 100%; 
+    border-radius: 25%; 
+    border: 5px solid #fff; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.rounded-image { width: 250px; height: 100%; border-radius: 25%; border: 5px solid #fff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
 
 /* ============ Company ============ */
 .company-section { padding: 60px 0; background-color: #f9f9f9; }
@@ -517,7 +524,7 @@ nav.scrolled {
 
 
 /* Social icons */
-.social-media-div { display: flex; gap: 10px; }
+.social-media-div { display: flex; gap: 10px; position: relative; z-index: 10; }
 .icon-button i {
     border-radius: 2.6rem;
     color: #fff;
@@ -730,6 +737,12 @@ nav.scrolled {
 
 /* Responsive */
 @media (max-width: 768px) {
+    .Adec{
+        text-align: left;
+    }
+    .rounded-image{
+        width: 100%;
+    }
     .project-card {
         flex: 0 0 280px;
         max-width: 280px;
@@ -749,6 +762,7 @@ nav.scrolled {
         bottom: 1rem;
         right: 1rem;
     }
+    .social-media-div { display: flow; gap: 10px; position: relative; z-index: 10; }
 }
 
 @media (max-width: 480px) {
@@ -801,7 +815,7 @@ h1:hover{
 @media (max-width: 767px), (max-width: 991px) {
     .NavText{ font-size: 16px; }
     .theme-toggle-button { margin-top: 0px !important; }
-    .contact-text { width: 50%; padding-right: 0px; }
+    .contact-text { padding-right: 0px; }
     .contact-image { width: 50%; padding-right: 0px; }
     .scrollUp { width: 40px; margin-left: -10px; }
     section, header{ width: 100% !important; }
