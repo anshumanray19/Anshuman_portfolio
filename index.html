@@ -147,25 +147,37 @@
         <div class="container">
             <h2 class="section__title reveal">What I Do</h2>
             <p class="section__subtitle reveal" data-delay="100">
-                FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK
+                ELEVATING IDEAS THROUGH PREMIUM SOFTWARE CRAFTSMANSHIP
             </p>
-            <div class="about__bullets">
-                <div class="about__bullet reveal" data-delay="150">
-                    <span class="about__bullet-icon">⚡</span>
-                    <p>Develop highly interactive Front end / User Interfaces for your web and mobile applications</p>
+            <div class="about__cards">
+                <div class="about-card glass-card reveal" data-delay="150">
+                    <div class="about-card__glow"></div>
+                    <div class="about-card__icon-wrapper">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3 class="about-card__title">Interactive Frontend</h3>
+                    <p class="about-card__desc">Architecting visually pristine and highly responsive User Interfaces
+                        that captivate audiences across both web and mobile platforms.</p>
                 </div>
-                <div class="about__bullet reveal" data-delay="200">
-                    <span class="about__bullet-icon">⚡</span>
-                    <p>With a strong focus on creating scalable solutions, I thrive on tackling challenges and
-                        delivering impactful results.</p>
+
+                <div class="about-card glass-card reveal" data-delay="200">
+                    <div class="about-card__glow"></div>
+                    <div class="about-card__icon-wrapper">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="about-card__title">Scalable Architecture</h3>
+                    <p class="about-card__desc">Designing robust, future-proof backend systems engineered to handle
+                        complex business logic and intensive workloads seamlessly.</p>
                 </div>
-                <div class="about__bullet reveal" data-delay="250">
-                    <span class="about__bullet-icon">⚡</span>
-                    <p>I am passionate about delivering high-quality software that drives innovation.</p>
-                </div>
-                <div class="about__bullet reveal" data-delay="300">
-                    <span class="about__bullet-icon">⚡</span>
-                    <p>Explore my portfolio to see my work and let's connect to discuss on next project!</p>
+
+                <div class="about-card glass-card reveal" data-delay="250">
+                    <div class="about-card__glow"></div>
+                    <div class="about-card__icon-wrapper">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="about-card__title">Innovative Execution</h3>
+                    <p class="about-card__desc">Transforming bold concepts into high-quality software, deeply focused on
+                        solving problems elegantly and driving technological innovation.</p>
                 </div>
             </div>
         </div>
@@ -208,6 +220,22 @@
                     <i class="fab fa-angular"></i>
                     <span>Angular</span>
                 </div>
+                <div class="skill-item reveal" data-delay="650">
+                    <i class="fas fa-database"></i>
+                    <span>MS SQL</span>
+                </div>
+                <div class="skill-item reveal" data-delay="700">
+                    <i class="fab fa-aws"></i>
+                    <span>AWS</span>
+                </div>
+                <div class="skill-item reveal" data-delay="750">
+                    <i class="fab fa-android"></i>
+                    <span>Android Studio</span>
+                </div>
+                <div class="skill-item reveal" data-delay="800">
+                    <img src="expo.svg" alt="Expo" class="skill-item__img" src="expo.svg">
+                    <span>Expo</span>
+                </div>
                 <div class="skill-item reveal" data-delay="450">
                     <i class="fab fa-wordpress"></i>
                     <span>WordPress</span>
@@ -223,14 +251,6 @@
                 <div class="skill-item reveal" data-delay="600">
                     <img src="dotnetnuke.svg" alt="DNN" class="skill-item__img">
                     <span>DotNetNuke</span>
-                </div>
-                <div class="skill-item reveal" data-delay="650">
-                    <i class="fas fa-database"></i>
-                    <span>MS SQL</span>
-                </div>
-                <div class="skill-item reveal" data-delay="700">
-                    <i class="fab fa-aws"></i>
-                    <span>AWS</span>
                 </div>
             </div>
         </div>
@@ -283,10 +303,30 @@
     </section>
 
     <!-- ============ EXPERIENCE ============ -->
-    <section id="experience" class="section">
+    <section id="experience" class="section section--experience">
+        <div class="section--experience__bg"></div>
         <div class="container">
             <h2 class="section__title reveal">Work Experience</h2>
             <div class="timeline">
+                <div class="timeline__item reveal" data-delay="50">
+                    <div class="timeline__dot"></div>
+                    <div class="timeline__card glass-card">
+                        <a href="https://www.estafftech.com/" class="timeline__logo-link" target="_blank">
+                            <img src="EstaffTech.jpeg" alt="estafftech" class="timeline__logo">
+                        </a>
+                        <div class="timeline__info">
+                            <a href="https://www.estafftech.com/" target="_blank" class="timeline__company">EstaffTech
+                                PVT LTD.</a>
+                            <span class="timeline__badge">On Site</span>
+                            <p class="timeline__role">Project Architect</p>
+                            <p class="timeline__meta"><i class="far fa-calendar"></i> Jan 2026 - Current</p>
+                            <p class="timeline__meta"><i class="fas fa-map-marker-alt"></i> Bangalore, Karnataka</p>
+                            <p class="timeline__desc">Leading technical architecture and project strategy as a Project
+                                Architect. Spearheading the design and execution of complex, high-impact enterprise
+                                solutions while driving cross-functional team collaboration.</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="timeline__item reveal" data-delay="100">
                     <div class="timeline__dot"></div>
                     <div class="timeline__card glass-card">
@@ -295,13 +335,14 @@
                         </a>
                         <div class="timeline__info">
                             <a href="https://epicmindsit.com/" target="_blank" class="timeline__company">Epic Minds
-                                IT.</a>
+                                IT PVT LTD.</a>
                             <span class="timeline__badge">On Site</span>
                             <p class="timeline__role">Software Developer</p>
-                            <p class="timeline__meta"><i class="far fa-calendar"></i> Nov 2022 - Current</p>
+                            <p class="timeline__meta"><i class="far fa-calendar"></i> Nov 2022 - Dec 2025</p>
                             <p class="timeline__meta"><i class="fas fa-map-marker-alt"></i> Bangalore, Karnataka</p>
-                            <p class="timeline__desc">Software Developer with 3+ yrs experience in full-stack
-                                development, proficient in .Net core, React Native, React JS and Angular</p>
+                            <p class="timeline__desc">Engineered scalable full-stack web and mobile applications
+                                leveraging .NET Core, React Native, ReactJS, and Angular. Delivered robust solutions
+                                driving business efficiency and seamless user experiences.</p>
                         </div>
                     </div>
                 </div>
@@ -318,8 +359,9 @@
                             <p class="timeline__role">CMS Developer</p>
                             <p class="timeline__meta"><i class="far fa-calendar"></i> Dec 2022 - Current</p>
                             <p class="timeline__meta"><i class="fas fa-map-marker-alt"></i> Louisville, Kentucky</p>
-                            <p class="timeline__desc">Software Developer with 3+ yrs experience in Content Management
-                                System, proficient in .Net MVC, Umbraco (CMS) and DotNetNuke (DNN)</p>
+                            <p class="timeline__desc">Architected and maintained highly performant Content Management
+                                Systems (CMS) using .NET MVC, Umbraco, and DotNetNuke. Optimized performance and
+                                tailored scalable digital solutions to meet complex client requirements.</p>
                         </div>
                     </div>
                 </div>
